@@ -1,0 +1,91 @@
+;; text file to contain medal information.  Does not include "rank" medals (see rank.tbl for those).
+;; medal names and which bitmap(s) are used to display them.
+
+#Medals
+
+$Name:          Bronze Star
+$Bitmap:        medal_bronze_star.dds
+$Num mods:      5
+
+$Name:          Silver Star
+$Bitmap:        medal_silver_star.dds
+$Num mods:      5
+
+$Name:          Gold Star
+$Bitmap:        medal_gold star.dds
+$Num mods:      5
+
+$Name:          Starburst
+$Bitmap:        medal_starburst.dds
+$Num mods:      1
+
+$Name:          Flying Cross
+$Bitmap:        medal_flying_cross.dds
+$Num mods:      1
+
+$Name:          Distinguished Service Cross
+$Bitmap:        medal_dist_service_cross.dds
+$Num mods:      1
+
+$Name:          Medal of Honor
+$Bitmap:        medal_of_honor.dds
+$Num mods:      1
+
+$Name:          OCS Graduation
+$Bitmap:        ribbon_graduation.dds
+$Num mods:      1
+
+$Name:          Flight Training
+$Bitmap:        ribbon_training.dds
+$Num mods:      1
+
+$Name:          Combat Action Medal
+$Bitmap:        ribbon_combat_action.dds
+$Num mods:      1
+
+$Name:          Ace Medal
+$Bitmap:        ribbon_ace.dds
+$Num mods:      1
++Num Kills:     5
+$Promotion Text:
+    $end_multi_text
+
+$Name:          Ace of Aces Medal
+$Bitmap:        ribbon_ace_of_aces.dds
+$Num mods:      1
++Num Kills:     25
+$Promotion Text:
+    $end_multi_text
+
+$Name:          Century Award
+$Bitmap:        ribbon_century.dds
+$Num mods:      1
++Num Kills:     100
+$Promotion Text:
+    $end_multi_text
+
+$Name:          Vega Evacuation
+$Bitmap:        ribbon_vega.dds
+$Num mods:      1
+
+$Name:          Operation Prowl Growl
+$Bitmap:        ribbon_prowl_growl.dds
+$Num mods:      1
+
+$Name:          Nephele Liberation
+$Bitmap:        ribbon_nephele.dds
+$Num mods:      1
+
+$Name:          Cairo Liberation
+$Bitmap:        ribbon_cairo.dds
+$Num mods:      1
+
+$Name:          Hyperion Service Medal
+$Bitmap:        ribbon_hyperion.dds
+$Num mods:      1
+
+;$Name:          Freya Campaign Medal	;WCS only : max medal
+;$Bitmap:        ribbon_freya.dds
+;$Num mods:      1
+
+#End

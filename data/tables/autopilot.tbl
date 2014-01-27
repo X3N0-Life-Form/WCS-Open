@@ -1,0 +1,32 @@
+#Autopilot
+
+$Link Distance: 150
+;+No_Cutscene_Bars
+;+No_Autopilot_Interrupt
+
+$No Nav Selected:
+	+Msg: none
+	+Snd File: none
+$Gliding:
+	+Msg: none
+	+Snd File: none	
+$Too Close:
+	+Msg: none
+	+Snd File: none
+$Hostiles:
+	+Msg: none
+	+Snd File: none
+$Linked:
+	+Msg: none
+	+Snd File: none
+$Hazard:
+	+Msg: none
+	+Snd File: none
+$Support Present:	;;added for FSO compatibility
+	+Msg: none
+	+Snd File: none
+$Support Working:	;;added for FSO compatibility
+	+Msg: none
+	+Snd File: none
+
+#END

@@ -1,0 +1,307 @@
+; 
+; music.tbl
+;
+; Wing Commander Saga: Codename Hermes Soundtrack Version 0.9.1
+;
+; Artist Code: Edward Bradshaw = a, Jeff Ball = b, Jeff Broadbent = c, Peter Dmitriyev = d, Tim Janssens = e, WC3 Old Track Placeholders = w
+;
+; It is recommended that you always install the latest driver from the original card/device maker but not use any Windows built-in drivers. 
+;
+; Specifies which .wav files to use for the different sections of event-driven sound-tracks
+;
+; format:  $Name:  filename.wav  num_measures (samples_per_measure)
+;
+;
+#SoundTrack Start                 ; Mission Failed
+$Soundtrack Name: Mission Failed
++Allied Arrival Overlay: NO
+;;+Lock in Ambient: YES		;;WCS only
+$Name:  ambient_mission_failed.ogg     43.12000   176400    ; * Ambience
+$Name:  ambient_mission_failed.ogg     43.12000   176400    ; * Allied Arrival during Normal
+$Name:  ambient_mission_failed.ogg     43.12000   176400    ; * Enemy Arrival during Normal
+$Name:  ambient_mission_failed.ogg     43.12000   176400    ; * Battle 1
+$Name:  ambient_mission_failed.ogg     43.12000   176400    ; * Battle 2
+$Name:  ambient_mission_failed.ogg     43.12000   176400    ; * Battle 3
+$Name:  ambient_mission_failed.ogg     43.12000   176400    ; * Allied Arrival during Battle
+$Name:  ambient_mission_failed.ogg     43.12000   176400    ; * Enemy Arrival during Battle
+$Name:  ambient_mission_failed.ogg     43.12000   176400    ; * Victory 1 ( goal completed )
+$Name:  ambient_mission_failed.ogg     43.12000   176400    ; * Victory 2  ( all enemies dead, goals completed )
+$Name:  ambient_mission_failed.ogg     43.12000   176400    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Mission Failed
+;
+#SoundTrack Start                 ; Oberan
+$Soundtrack Name: Oberan
++Allied Arrival Overlay: NO
+$Name:  ambient_a_01.ogg               43.19700   176400    ; * Ambience
+$Name:  aarrival_normal_b_01.ogg        2.00000   165287    ; * Allied Arrival during Normal
+$Name:  earrival_normal_b_01.ogg        6.99585   178623    ; * Enemy Arrival during Normal
+$Name:  battle1_b_01.ogg               48.00000   171667    ; * Battle 1
+$Name:  battle2_b_01.ogg               30.00000   172940    ; * Battle 2
+$Name:  battle3_b_01.ogg               43.00000   169416    ; * Battle 3
+$Name:  aarrival_battle_b_01.ogg        2.00000   172696    ; * Allied Arrival during Battle
+$Name:  earrival_battle_b_01.ogg        4.13900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_b_01.ogg          6.23787   169079    ; * Victory 1 ( goal completed )
+$Name:  victory_b_01.ogg               32.07837   192452    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Oberan
+;
+#SoundTrack Start                 ; Brimstone
+$Soundtrack Name: Brimstone
++Allied Arrival Overlay: NO
+$Name:  ambient_b_01.ogg               60.00000   152654    ; * Ambience
+$Name:  aarrival_normal_b_01.ogg        2.00000   165287    ; * Allied Arrival during Normal
+$Name:  earrival_normal_b_01.ogg        6.99585   178623    ; * Enemy Arrival during Normal
+$Name:  battle1_b_01.ogg               48.00000   171667    ; * Battle 1
+$Name:  battle2_b_01.ogg               30.00000   172940    ; * Battle 2
+$Name:  battle3_b_01.ogg               43.00000   169416    ; * Battle 3
+$Name:  aarrival_battle_b_01.ogg        2.00000   172696    ; * Allied Arrival during Battle
+$Name:  earrival_battle_b_01.ogg        4.13900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_b_01.ogg          6.23787   169079    ; * Victory 1 ( goal completed )
+$Name:  victory_b_01.ogg               32.07837   192452    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Brimstone
+;
+#SoundTrack Start                 ; Vega
+$Soundtrack Name: Vega
++Allied Arrival Overlay: NO
+$Name:  ambient_b_02.ogg              102.00000   123926    ; * Ambience
+$Name:  aarrival_normal_b_01.ogg        2.00000   165287    ; * Allied Arrival during Normal
+$Name:  earrival_normal_b_01.ogg        6.99585   178623    ; * Enemy Arrival during Normal
+$Name:  battle1_b_01.ogg               48.00000   171667    ; * Battle 1
+$Name:  battle2_b_01.ogg               30.00000   172940    ; * Battle 2
+$Name:  battle3_b_01.ogg               43.00000   169416    ; * Battle 3
+$Name:  aarrival_battle_b_01.ogg        2.00000   172696    ; * Allied Arrival during Battle
+$Name:  earrival_battle_b_01.ogg        4.13900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_b_01.ogg          6.23787   169079    ; * Victory 1 ( goal completed )
+$Name:  victory_b_01.ogg               32.07837   192452    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Vega
+;
+#SoundTrack Start                 ; Ritt der Walküren
+$Soundtrack Name: Ritt der Walküren
++Allied Arrival Overlay: NO
+;;+Lock in Ambient: YES
+$Name:  ritt_der_walkueren_comm.ogg    81.05150    88200    ; * Ambience
+$Name:  ritt_der_walkueren_comm.ogg    81.05150    88200    ; * Allied Arrival during Normal
+$Name:  ritt_der_walkueren_comm.ogg    81.05150    88200    ; * Enemy Arrival during Normal
+$Name:  ritt_der_walkueren_comm.ogg    81.05150    88200    ; * Battle 1
+$Name:  ritt_der_walkueren_comm.ogg    81.05150    88200    ; * Battle 2
+$Name:  ritt_der_walkueren_comm.ogg    81.05150    88200    ; * Battle 3
+$Name:  ritt_der_walkueren_comm.ogg    81.05150    88200    ; * Allied Arrival during Battle
+$Name:  ritt_der_walkueren_comm.ogg    81.05150    88200    ; * Enemy Arrival during Battle
+$Name:  ritt_der_walkueren_comm.ogg    81.05150    88200    ; * Victory 1 ( goal completed )
+$Name:  ritt_der_walkueren_comm.ogg    81.05150    88200    ; * Victory 2  ( all enemies dead, goals completed )
+$Name:  ritt_der_walkueren_comm.ogg    81.05150    88200    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Ritt der Walküren
+;
+#SoundTrack Start                 ; Proxima
+$Soundtrack Name: Proxima
++Allied Arrival Overlay: NO
+$Name:  ambient_b_03.ogg               60.00000   166023    ; * Ambience
+$Name:  aarrival_normal_b_01.ogg        2.00000   165287    ; * Allied Arrival during Normal
+$Name:  earrival_normal_b_01.ogg        6.99585   178623    ; * Enemy Arrival during Normal
+$Name:  battle1_b_03.ogg               32.00000   161464    ; * Battle 1
+$Name:  battle2_b_03.ogg               37.00000   157852    ; * Battle 2
+$Name:  battle3_b_03.ogg               22.00000   155244    ; * Battle 3
+$Name:  aarrival_battle_b_01.ogg        2.00000   172696    ; * Allied Arrival during Battle
+$Name:  earrival_battle_b_01.ogg        4.13900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_b_01.ogg          6.23787   169079    ; * Victory 1 ( goal completed )
+$Name:  victory_b_01.ogg               32.07837   192452    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Proxima
+;
+#SoundTrack Start                 ; Loki
+$Soundtrack Name: Loki
++Allied Arrival Overlay: NO
+$Name:  ambient_b_04.ogg               66.00000   166101    ; * Ambience
+$Name:  aarrival_normal_b_01.ogg        2.00000   165287    ; * Allied Arrival during Normal
+$Name:  earrival_normal_b_01.ogg        6.99585   178623    ; * Enemy Arrival during Normal
+$Name:  battle1_b_03.ogg               32.00000   161464    ; * Battle 1
+$Name:  battle2_b_03.ogg               37.00000   157852    ; * Battle 2
+$Name:  battle3_b_03.ogg               22.00000   155244    ; * Battle 3
+$Name:  aarrival_battle_b_01.ogg        2.00000   172696    ; * Allied Arrival during Battle
+$Name:  earrival_battle_b_01.ogg        4.13900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_b_01.ogg          6.23787   169079    ; * Victory 1 ( goal completed )
+$Name:  victory_b_01.ogg               32.07837   192452    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Loki
+;
+#SoundTrack Start                 ; Nifelheim
+$Soundtrack Name: Nifelheim
++Allied Arrival Overlay: NO
+$Name:  ambient_d_01.ogg               38.24400   192000    ; * Ambience
+$Name:  aarrival_normal_b_01.ogg        2.00000   165287    ; * Allied Arrival during Normal
+$Name:  earrival_normal_b_01.ogg        6.99585   178623    ; * Enemy Arrival during Normal
+$Name:  battle1_b_03.ogg               32.00000   161464    ; * Battle 1
+$Name:  battle2_b_03.ogg               37.00000   157852    ; * Battle 2
+$Name:  battle3_b_03.ogg               22.00000   155244    ; * Battle 3
+$Name:  aarrival_battle_b_01.ogg        2.00000   172696    ; * Allied Arrival during Battle
+$Name:  earrival_battle_b_01.ogg        4.13900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_b_01.ogg          6.23787   169079    ; * Victory 1 ( goal completed )
+$Name:  victory_b_01.ogg               32.07837   192452    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Nifelheim
+;
+#SoundTrack Start                 ; Caliban
+$Soundtrack Name: Caliban
++Allied Arrival Overlay: NO
+$Name:  ambient_e_01.ogg               86.34750   176400    ; * Ambience
+$Name:  aarrival_normal_b_01.ogg        2.00000   165287    ; * Allied Arrival during Normal
+$Name:  earrival_normal_b_01.ogg        6.99585   178623    ; * Enemy Arrival during Normal
+$Name:  battle1_c_01.ogg               47.41200   176400    ; * Battle 1
+$Name:  battle1_c_01.ogg               47.41200   176400    ; * Battle 2
+$Name:  battle1_c_01.ogg               47.41200   176400    ; * Battle 3
+$Name:  aarrival_battle_b_01.ogg        2.00000   172696    ; * Allied Arrival during Battle
+$Name:  earrival_battle_b_01.ogg        4.13900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_b_01.ogg          6.23787   169079    ; * Victory 1 ( goal completed )
+$Name:  victory_b_01.ogg               32.07837   192452    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Caliban
+;
+#SoundTrack Start                 ; Torgo
+$Soundtrack Name: Torgo
++Allied Arrival Overlay: NO
+$Name:  ambient_b_05.ogg               65.00000   172097    ; * Ambience
+$Name:  aarrival_normal_b_01.ogg        2.00000   165287    ; * Allied Arrival during Normal
+$Name:  earrival_normal_b_01.ogg        6.99585   178623    ; * Enemy Arrival during Normal
+$Name:  battle1_b_03.ogg               32.00000   161464    ; * Battle 1
+$Name:  battle2_b_02.ogg               26.00000   169208    ; * Battle 2
+$Name:  battle3_b_02.ogg               31.00000   163585    ; * Battle 3
+$Name:  aarrival_battle_b_01.ogg        2.00000   172696    ; * Allied Arrival during Battle
+$Name:  earrival_battle_b_01.ogg        4.13900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_b_01.ogg          6.23787   169079    ; * Victory 1 ( goal completed )
+$Name:  victory_b_01.ogg               32.07837   192452    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Torgo
+;
+#SoundTrack Start                 ; Nephele
+$Soundtrack Name: Nephele
++Allied Arrival Overlay: NO
+$Name:  ambient_a_02.ogg               72.00000   176400    ; * Ambience
+$Name:  aarrival_normal_b_01.ogg        2.00000   165287    ; * Allied Arrival during Normal
+$Name:  earrival_normal_b_01.ogg        6.99585   178623    ; * Enemy Arrival during Normal
+$Name:  battle1_e_03.ogg               73.78000   176400    ; * Battle 1
+$Name:  battle1_e_03.ogg               73.78000   176400    ; * Battle 2
+$Name:  battle1_e_03.ogg               73.78000   176400    ; * Battle 3
+$Name:  aarrival_battle_b_01.ogg        2.00000   172696    ; * Allied Arrival during Battle
+$Name:  earrival_battle_b_01.ogg        4.13900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_b_01.ogg          6.23787   169079    ; * Victory 1 ( goal completed )
+$Name:  victory_b_01.ogg               32.07837   192452    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Nephele
+;
+#SoundTrack Start                 ; Alcor-Kurasawa
+$Soundtrack Name: Alcor-Kurasawa
++Allied Arrival Overlay: NO
+$Name:  ambient_a_03.ogg               29.48300   176400    ; * Ambience
+$Name:  aarrival_normal_b_01.ogg        2.00000   165287    ; * Allied Arrival during Normal
+$Name:  earrival_normal_b_01.ogg        6.99585   178623    ; * Enemy Arrival during Normal
+$Name:  battle1_b_01.ogg               48.00000   171667    ; * Battle 1
+$Name:  battle2_b_01.ogg               48.00000   171667    ; * Battle 2
+$Name:  battle3_b_01.ogg               48.00000   171667    ; * Battle 3
+$Name:  aarrival_battle_b_01.ogg        2.00000   172696    ; * Allied Arrival during Battle
+$Name:  earrival_battle_b_01.ogg        4.13900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_b_01.ogg          6.23787   169079    ; * Victory 1 ( goal completed )
+$Name:  victory_b_01.ogg               32.07837   192452    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Alcor-Kurasawa
+;
+#SoundTrack Start                 ; Cairo
+$Soundtrack Name: Cairo
++Allied Arrival Overlay: NO
+$Name:  ambient_e_03.ogg               30.60200   176400    ; * Ambience
+$Name:  aarrival_normal_e_01.ogg        2.78200   176400    ; * Allied Arrival during Normal
+$Name:  earrival_normal_e_01.ogg        4.03550   176400    ; * Enemy Arrival during Normal
+$Name:  battle1_e_02.ogg               28.18200   176400    ; * Battle 1
+$Name:  battle2_e_02.ogg               20.79450   176400    ; * Battle 2
+$Name:  battle2_e_02.ogg               20.79450   176400    ; * Battle 3
+$Name:  aarrival_normal_e_01.ogg        2.78200   176400    ; * Allied Arrival during Battle
+$Name:  earrival_battle_e_01.ogg        3.87900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_e_01.ogg          5.02850   176400    ; * Victory 1 ( goal completed )
+$Name:  victory_e_01.ogg               37.13300   176400    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Cairo
+;
+#SoundTrack Start                 ; Hyperion
+$Soundtrack Name: Hyperion
++Allied Arrival Overlay: NO
+$Name:  ambient_e_02.ogg               50.56000   176400    ; * Ambience
+$Name:  aarrival_normal_e_01.ogg        2.78200   176400    ; * Allied Arrival during Normal
+$Name:  earrival_normal_e_01.ogg        4.03550   176400    ; * Enemy Arrival during Normal
+$Name:  battle1_e_01.ogg               40.60700   176400    ; * Battle 1
+$Name:  battle2_e_01.ogg               27.85950   176400    ; * Battle 2
+$Name:  battle3_e_01.ogg               38.64800   176400    ; * Battle 3
+$Name:  aarrival_normal_e_01.ogg        2.78200   176400    ; * Allied Arrival during Battle
+$Name:  earrival_battle_e_01.ogg        3.87900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_e_01.ogg          5.02850   176400    ; * Victory 1 ( goal completed )
+$Name:  victory_e_01.ogg               37.13300   176400    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Hyperion
+;
+#SoundTrack Start                 ; Freya
+$Soundtrack Name: Freya
++Allied Arrival Overlay: NO
+$Name:  ambient_c_01.ogg               61.71400   176400    ; * Ambience
+$Name:  aarrival_normal_e_01.ogg        2.78200   176400    ; * Allied Arrival during Normal
+$Name:  earrival_normal_e_01.ogg        4.03550   176400    ; * Enemy Arrival during Normal
+$Name:  battle1_e_04.ogg               33.46050   176400    ; * Battle 1
+$Name:  battle1_e_04.ogg               33.46050   176400    ; * Battle 2
+$Name:  battle1_e_04.ogg               33.46050   176400    ; * Battle 3
+$Name:  aarrival_normal_e_01.ogg        2.78200   176400    ; * Allied Arrival during Battle
+$Name:  earrival_battle_e_01.ogg        3.87900   176400    ; * Enemy Arrival during Battle
+$Name:  goal_achieved_e_01.ogg          5.02850   176400    ; * Victory 1 ( goal completed )
+$Name:  victory_e_01.ogg               37.13300   176400    ; * Victory 2 ( all enemies dead, goals completed )
+$Name:  goal_failed_b_01.ogg            5.41106   169079    ; * Goal Failed
+$Name:  player_dead_b_01.ogg           19.95349   113778    ; * Player dies
+#SoundTrack End                   ; End Freya
+;
+;
+#Menu Music Start
+$Name:      Command Brief
+$Filename:  briefing_e_02.ogg           ; Command briefing music
+
+$Name:      Brief1
+$Filename:  briefing_a_01.ogg           ; Briefing music 1 (Default)
+
+$Name:      Brief2    
+$Filename:  briefing_b_01.ogg           ; Briefing music 2
+
+$Name:      Brief3
+$Filename:  briefing_b_02.ogg           ; Briefing music 3
+
+$Name:      Brief4
+$Filename:  briefing_b_03.ogg           ; Briefing music 4
+
+$Name:      Success
+$Filename:  briefing_e_01.ogg           ; Debriefing success music
+
+$Name:      Average
+$Filename:  briefing_e_01.ogg           ; Debriefing average music
+
+$Name:      Failure
+$Filename:  debriefing_failure_e_01.ogg ; Debriefing failure music
+
+$Name:      Hermes
+$Filename:  main_e_02.ogg               ; Fiction viewer music
+
+$Name:      Wellington
+$Filename:  main_f_01.ogg               ; Prologue menu music
+
+$Name:      Cinema
+$Filename:  credits.ogg                 ; Credits music
+#Menu Music End
+

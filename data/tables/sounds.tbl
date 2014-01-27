@@ -1,0 +1,315 @@
+;  Wing Commander Saga sounds.tbl
+;
+;  file to specify general game sounds
+;
+;                     I M P O R T A N T
+;  **********************************************************
+;  *                                                        *
+;  ====>  DO NOT MODIFY THE ORDER OF THE LISTED SOUNDS <====*
+;  *                                                        *
+;  **********************************************************
+;                     I M P O R T A N T
+;
+;  If a sound entry appears in this file, there is a hook into the game to
+;  play the sound.  This file can only be modified to change *existing* sounds.
+;  Talk to a programmer if you want to add brand new sounds.  Adding a line to
+;  this file will not make your sound appear in the game, it will more than
+;  likely break something.
+;
+;  If you don't want the sound to play, put none.wav as the sound to play.
+;
+;  The fields for a sound entry are:
+;  1) unqiue sound signature
+;  2) filename of the sound
+;  3) flag to indicate sound should always be pre-loaded before a mission
+;  4) the default volume (from 0.0 -> 1.0)
+;  5) 0 - not 3d  1 - stereo 3D  2 - Aureal A3D (if available), otherwise use stereo 3D
+;  6) distance at which sound starts to attenuate (for 3d sounds only)
+;  7) distance at which sound is inaudible (for 3d sounds only)
+;
+#Game Sounds Start
+;
+; Misc sounds section
+;
+$Name:    0     snd_missile_tracking.wav,       0, 0.40, 0              ; Missle tracking to acquire a lock (looped)
+$Name:    1     snd_missile_lock.wav,           0, 0.40, 0              ; Missle lock (non-looping)
+$Name:    2     snd_primary_cycle.wav,          0, 0.60, 0              ; cycle primary weapon
+$Name:    3     snd_secondary_cycle.wav,        0, 0.60, 0              ; cycle secondary weapon
+$Name:    4     snd_engine.wav,                 0, 0.55, 0              ; engine sound (as heard in cockpit)
+$Name:    5     snd_cargo_reveal.wav,           0, 0.40, 0              ; cargo revealed 
+$Name:    6     snd_death_roll.wav,             0, 1.00, 2,  100,  800  ; ship death roll (3d sound)
+$Name:    7     snd_ship_explode_1.wav,         0, 0.90, 2,  750, 1500  ; ship explosion 1 (3d sound)
+$Name:    8     snd_target_acquire.wav,         0, 0.60, 0              ; target acquried
+$Name:    9     snd_energy_adjust.wav,          0, 0.50, 0              ; energy level change success
+$Name:   10     snd_energy_adjust_fail.wav,     0, 0.50, 0              ; energy level change fail
+$Name:   11     snd_energy_trans.wav,           0, 0.50, 0              ; energy transfer success
+$Name:   12     snd_energy_trans_fail.wav,      0, 0.50, 0              ; energy transfer fail
+$Name:   13     snd_full_throttle.wav,          0, 0.40, 0              ; set full throttle
+$Name:   14     snd_zero_throttle.wav,          0, 0.40, 0              ; set zero throttle
+$Name:   15     snd_throttle_up.wav,            0, 0.40, 0              ; set 1/3 or 2/3 throttle (up)
+$Name:   16     snd_throttle_down.wav,          0, 0.40, 0              ; set 1/3 or 2/3 throttle (down)
+$Name:   17     snd_dock_approach.wav,          0, 0.60, 2,   10,  800  ; dock approach retros (3d sound)
+$Name:   18     snd_dock_attach.wav,            0, 0.60, 2,   10,  800  ; dock attach (3d sound)
+$Name:   19     snd_dock_detach.wav,            0, 0.60, 2,   10,  800  ; dock detach (3d sound)
+$Name:   20     snd_dock_depart.wav,            0, 0.60, 2,   10,  800  ; dock depart retros (3d sound)
+$Name:   21     snd_aburn_engage.wav,           0, 0.60, 0,  ;100,  500  ; afterburner engage 
+$Name:   22     snd_aburn_loop.wav,             0, 0.75, 0,  ;100,  500  ; afterburner burn sound (looped)
+$Name:   23     none.wav,                       0, 0.80, 0              ; Destroyed by a beam (vaporized)
+$Name:   24     snd_aburn_fail.wav,             0, 0.50, 0              ; afterburner fail (no fuel when aburn pressed)
+$Name:   25     snd_heatlock_warn.wav,          0, 1.00, 0              ; heat-seeker launch warning
+$Name:   26     snd_out_of_missles.wav,         0, 0.60, 0              ; tried to fire a missle when none are left
+$Name:   27     none.wav,                       0, 0.80, 0              ; tried to fire lasers when not enough energy left
+$Name:   28     snd_target_fail.wav,            0, 0.50, 0              ; target fail sound (i.e. press targeting key, but nothing happens)
+$Name:   29     snd_squadmsging_on.wav,         0, 0.50, 0              ; squadmate message menu appears
+$Name:   30     snd_squadmsging_off.wav,        0, 0.50, 0              ; squadmate message menu disappears
+$Name:   31     snd_debris.wav,                 0, 0.40, 2,  100,  300  ; debris sound (persistant, looping) (3d sound)
+$Name:   32     snd_subsys_die_1.wav,           0, 0.60, 0              ; subsystem gets destroyed on player ship
+$Name:   33     snd_missile_start_load.wav,     0, 0.50, 0              ; missle start load (during rearm/repair) 
+$Name:   34     snd_missile_load.wav,           0, 0.50, 0              ; missle load (during rearm/repair) (3d sound)
+$Name:   35     snd_ship_repair.wav,            0, 0.50, 0              ; ship is being repaired (during rearm/repair) (looped)
+$Name:   36     snd_player_hit_laser.wav,       0, 0.90, 2,   30,  100  ; player ship is hit by laser fire (3d sound)
+$Name:   37     snd_player_hit_missile.wav,     0, 0.90, 2,   30,  100  ; player ship is hit by missile (3d sound)
+$Name:   38     snd_cmeasure_cycle.wav,         0, 0.80, 0              ; countermeasure cycle
+$Name:   39     snd_shield_hit.wav,             0, 0.70, 2,  250, 1500  ; shield hit (3d sound)
+$Name:   40     snd_shield_hit_you.wav,         0, 0.80, 2,   10,  100  ; player shield is hit (3d sound)
+$Name:   41     snd_game_mouse_click.wav,       0, 0.60, 0              ; mouse click
+$Name:   42     snd_aspectlock_warn.wav,        0, 1.00, 0              ; aspect launch warning
+$Name:   43     snd_shield_xfer_ok.wav,         0, 0.60, 0              ; shield quadrant transfer successful
+$Name:   44     snd_engine_wash.wav,            0, 0.80, 0              ; Engine wash looping sound
+$Name:   45     snd_warp_in.wav,                0, 0.60, 2,  750, 1500  ; warp hole opening up for arriving (3d sound)
+$Name:   46     snd_warp_out.wav,               0, 0.60, 2,  750, 1500  ; warp hole opening up for departing (3d sound)
+$Name:   47     snd_player_warp_fail.wav,       0, 0.50, 0              ; player warp has failed
+$Name:   48     none.wav,                       0, 0.60, 0              ; hud gauge static
+$Name:   49     snd_ship_explode_2.wav,         0, 0.90, 2,  750, 1500  ; ship explosion 2 (3d sound)
+$Name:   50     snd_player_warp_out.wav,        0, 0.70, 0              ; ship is warping out in 3rd person
+$Name:   51     snd_ship_ship_heavy.wav,        0, 0.70, 2,  100,  200  ; heavy ship-ship collide sound (3d sound)
+$Name:   52     snd_ship_ship_light.wav,        0, 0.70, 2,  100,  200  ; light ship-ship collide sound (3d sound)
+$Name:   53     snd_ship_ship_shield.wav,       0, 0.70, 2,  100,  200  ; shield ship-ship collide overlay sound (3d sound)
+$Name:   54     snd_threat_flash.wav,           0, 0.50, 0              ; missile threat indicator flashes
+$Name:   55     snd_proximity_warning.wav,      0, 0.90, 0              ; proximity warning (heat seeker)
+$Name:   56     snd_proximity_asp_warning.wav,  0, 0.90, 0              ; proximity warning (aspect)
+$Name:   57     snd_directive_complete.wav,     0, 0.70, 0              ; directive complete
+$Name:   58     snd_subsys_explode.wav,         0, 0.90, 2,  250,  800  ; other ship subsystem destroyed (3d sound)
+$Name:   59     snd_capship_explode.wav,        0, 0.90, 2, 2000, 4000  ; captial ship explosion (3d sound)
+$Name:   60     snd_capship_subsys_explode.wav, 0, 0.90, 2,  250, 1500  ; captial ship subsystem destroyed (3d sound)
+$Name:   61     snd_largeship_warpout.wav,      0, 1.00, 2, 1500, 2000  ; [obsolete] large ship warps out (looping 3d sound)
+$Name:   62     snd_asteroid_explode_large.wav, 0, 0.80, 2,  750, 1500  ; large asteroid blows up (3d sound)
+$Name:   63     snd_asteroid_explode_small.wav, 0, 0.80, 2,  500, 1000  ; small asteroid blows up (3d sound)
+$Name:   64     none.wav,                       0, 0.90, 0              ; sound to indicate voice is about to start
+$Name:   65     none.wav,                       0, 0.90, 0              ; sound to indicate voice has ended
+$Name:   66     snd_cargo_scan.wav,             0, 0.50, 0              ; cargo scanning (looping)
+$Name:   67     snd_weapon_flyby.wav,           0, 0.60, 2,   50,  250  ; weapon flyby sound
+$Name:   68     snd_asteroid.wav,               0, 0.50, 2,  200,  700  ; [obsolete] asteroid sound (persistant, looping) (3d sound)
+$Name:   69     snd_capital_warp_in.wav,        0, 1.00, 2, 2000, 4000  ; capital warp hole opening (3d sound)
+$Name:   70     snd_capital_warp_out.wav,       0, 1.00, 2, 2000, 4000  ; capital warp hole closing (3d sound)
+$Name:   71     snd_engine_loop_large.wav,      0, 0.70, 2,  600, 1000  ; LARGE engine ambient
+$Name:   72     none.wav,                       0, 0.30, 0              ; subspace ambient sound (left channel) (looping)
+$Name:   73     none.wav,                       0, 0.30, 0              ; subspace ambient sound (right channel) (looping)
+$Name:   74     snd_missile_evaded_popup.wav,   0, 0.70, 0              ; "evaded" HUD popup
+$Name:   75     snd_engine_loop_huge.wav,       0, 0.70, 2,  600, 1000  ; HUGE engine ambient
+;
+; Weapons section
+;
+$Name:   76     snd_laser_cannon_fire.wav,      0, 0.50, 2,  200, 1200  ; Laser Cannon fired (3d sound)
+$Name:   77     snd_plasma_gun_fire.wav,        0, 0.50, 2,  200, 1200  ; Plasma Gun fired (3d sound)
+$Name:   78     snd_reaper_gun_fire.wav,        0, 0.50, 2,  200, 1200  ; Reaper Gun fired (3d sound)
+$Name:   79     snd_mass_driver_fire.wav,       0, 0.50, 2,  200, 1200  ; Mass Driver Cannon fired  (3d sound)
+$Name:   80     snd_ion_cannon_fire.wav,        0, 0.50, 2,  200, 1200  ; Ion Cannon fired (3d sound)
+$Name:   81     snd_meson_blaster_fire.wav,     0, 0.50, 2,  200, 1200  ; Meson Blaster fired (3d sound)
+$Name:   82     snd_tachyon_gun_fire.wav,       0, 0.50, 2,  200, 1200  ; Tachyon Gun fired (3d sound)
+$Name:   83     snd_particle_gun_fire.wav,      0, 0.50, 2,  200, 1200  ; Particle Gun fired (3d sound)
+$Name:   84     snd_neutron_gun_fire.wav,       0, 0.50, 2,  200, 1200  ; Neutron Gun fired (3d sound)
+$Name:   85     snd_laser_impact.wav,           0, 0.90, 2,  200,  800  ; Laser impact (3d sound)
+$Name:   86     snd_photon_gun_fire.wav,        0, 0.50, 2,  200, 1200  ; Photon Gun fired (3d sound)
+$Name:   87     snd_dumbfire_launch.wav,        0, 0.80, 2,  200, 1800  ; Dumbfire missile launch (3d sound)
+$Name:   88     snd_missile_impact.wav,         0, 0.80, 2,  500, 1200  ; missile impact 1 (3d sound)
+$Name:   89     none.wav,                       0, 0.80, 0
+$Name:   90     none.wav,                       0, 0.80, 0
+$Name:   91     none.wav,                       0, 0.80, 0
+$Name:   92     none.wav,                       0, 0.80, 0
+$Name:   93     none.wav,                       0, 0.80, 0
+$Name:   94     none.wav,                       0, 0.80, 0
+$Name:   95     none.wav,                       0, 0.80, 0
+$Name:   96     snd_light_tachyon_fire.wav,     0, 0.50, 2,  200, 1200  ; Light Tachyon Cannon fired (3d sound)
+$Name:   97     snd_torpedo_launch.wav,         0, 1.00, 2,  500, 3000  ; torpedo launch (3d sound)
+$Name:   98     none.wav,                       0, 0.80, 0
+$Name:   99     snd_cmeasure1_launch.wav,       0, 0.90, 2,  100, 1000  ; * countermeasure 1 launch (3d sound)
+$Name:  100     none.wav,                       0, 0.80, 0
+$Name:  101     snd_shockwave_explode.wav,      0, 0.80, 2, 1200, 2000  ; * shockwave ignition (3d sound)
+$Name:  102     none.wav,                       0, 0.80, 0
+$Name:  103     none.wav,                       0, 0.80, 0
+$Name:  104     snd_engine_loop_capital_1.wav,  0, 0.70, 2,  100, 2000  ; engine (3d sound)
+$Name:  105     snd_engine_loop_capital_2.wav,  0, 0.70, 2,  100, 2000  ; engine (3d sound)
+$Name:  106     snd_engine_loop_capital_3.wav,  0, 0.70, 2,  100, 2000  ; engine (3d sound)
+$Name:  107     none.wav,                       0, 0.80, 0
+$Name:  108     none.wav,                       0, 0.80, 0
+$Name:  109     snd_shockwave_impact.wav,       0, 0.70, 2,   50,  800  ; ** shockwave impact (3d sound)
+$Name:  110     snd_laser_turret_fire.wav,      0, 0.60, 2,  200, 2000  ; LASER TURRET
+$Name:  111     snd_amg_turret_fire.wav,        0, 0.60, 2,  500, 3500  ; AMG TURRET
+$Name:  112     snd_tachyon_turret_fire.wav,    0, 0.60, 2,  200, 2000  ; TACHYON TURRET
+$Name:  113     snd_neutron_turret_fire.wav,    0, 0.60, 2,  200, 2000  ; NEUTRON TURRET
+$Name:  114     snd_plasma_turret_fire.wav,     0, 0.60, 2,  200, 2000  ; PLASMA TURRET
+$Name:  115     none.wav,                       0, 0.80, 0
+$Name:  116     snd_flak_fire.wav,              0, 0.60, 2,  250, 1000  ; Flak Gun Launch
+$Name:  117     snd_shield_breaker.wav,         0, 0.80, 2,  400,  800  ; Flak Gun Impact
+$Name:  118     none.wav,                       0, 0.80, 0              ; EMP Missile
+$Name:  119     snd_autocannon_loop.wav,        0, 0.60, 2,  200,  600  ; Autocanon Drone
+$Name:  120     none.wav,                       0, 0.80, 0              ; Autocannon shot
+$Name:  121     none.wav,                       0, 0.80, 0              ; Beam loop
+$Name:  122     none.wav,                       0, 0.80, 0              ; Beam up
+$Name:  123     none.wav,                       0, 0.80, 0              ; Beam down
+$Name:  124     none.wav,                       0, 0.80, 0              ; Beam shot
+$Name:  125     none.wav,                       0, 0.80, 0              ; Beam vaporize
+;Ship Engine Sounds section
+$Name:  126     snd_confed_fighter_eng.wav,     0, 0.60, 2,   50, 1000  ; engine (3d sound)
+$Name:  127     snd_confed_bomber_eng.wav,      0, 0.60, 2,   50, 1000  ; engine (3d sound)
+$Name:  128     snd_confed_utility_eng.wav,     0, 0.60, 2,   50, 1000  ; engine (3d sound)
+$Name:  129     snd_confed_capship_eng.wav,     0, 0.70, 2,   50, 1000  ; engine (3d sound)
+$Name:  130     snd_confed_base_eng.wav,        0, 0.70, 2,   50, 1000  ; engine (3d sound)
+$Name:  131     snd_kilrathi_fighter_eng.wav,   0, 0.70, 2,   50, 1000  ; engine (3d sound)
+$Name:  132     snd_kilrathi_bomber_eng.wav,    0, 0.60, 2,   50, 1000  ; engine (3d sound)
+$Name:  133     snd_kilrathi_utility_eng.wav,   0, 0.60, 2,   50, 1000  ; engine (3d sound)
+$Name:  134     snd_kilrathi_capship_eng.wav,   0, 0.70, 2,   50, 1000  ; engine (3d sound)
+$Name:  135     snd_kilrathi_base_eng.wav,      0, 0.60, 2,   50, 1000  ; engine (3d sound)
+$Name:  136     snd_behemoth_eng.wav,           0, 0.70, 2,  100, 2000  ; engine (3d sound)
+$Name:  137     snd_dreadnaught_eng.wav,        0, 0.80, 2,  100, 2000  ; engine (3d sound)
+$Name:  138     none.wav,                       0, 0.80, 0
+; Electrical arc sound fx on the debris pieces
+$Name:  139     snd_debris_arc_01.wav,          0, 0.30, 2,  200,  400  ; ** 0.10 second spark sound effect (3d sound)
+$Name:  140     snd_debris_arc_02.wav,          0, 0.30, 2,  200,  400  ; ** 0.25 second spark sound effect (3d sound)
+$Name:  141     snd_debris_arc_03.wav,          0, 0.30, 2,  200,  400  ; ** 0.50 second spark sound effect (3d sound)
+$Name:  142     snd_debris_arc_04.wav,          0, 0.30, 2,  200,  400  ; ** 0.75 second spark sound effect (3d sound)
+$Name:  143     snd_debris_arc_05.wav,          0, 0.30, 2,  200,  400  ; ** 1.00 second spark sound effect (3d sound)
+; Beam Sounds
+$Name:  144     snd_cloak_on.wav,               0, 0.80, 0              ; Cloak on
+$Name:  145     snd_cloak_off.wav,              0, 0.80, 0              ; Cloak off
+$Name:  146     none.wav,                       0, 0.80, 0
+$Name:  147     none.wav,                       0, 0.80, 0
+$Name:  148     none.wav,                       0, 0.80, 0
+$Name:  149     none.wav,                       0, 0.80, 0
+$Name:  150     none.wav,                       0, 0.80, 0
+$Name:  151     none.wav,                       0, 0.80, 0
+$Name:  152     none.wav,                       0, 0.80, 0
+$Name:  153     none.wav,                       0, 0.80, 0
+$Name:  154     none.wav,                       0, 0.80, 0
+$Name:  155     none.wav,                       0, 0.80, 0
+$Name:  156     none.wav,                       0, 0.80, 0
+$Name:  157     none.wav,                       0, 0.80, 0
+$Name:  158     none.wav,                       0, 0.80, 0
+$Name:  159     none.wav,                       0, 0.80, 0
+$Name:  160     none.wav,                       0, 0.80, 0
+$Name:  161     none.wav,                       0, 0.80, 0
+$Name:  162     snd_startup.wav,                0, 0.80, 0
+$Name:  163     none.wav,                       0, 0.80, 0
+$Name:  164     none.wav,                       0, 0.80, 0
+$Name:  165     none.wav,                       0, 0.80, 0
+$Name:  166     none.wav,                       0, 0.80, 0
+$Name:  167     none.wav,                       0, 0.80, 0
+$Name:  168     none.wav,                       0, 0.80, 0
+$Name:  169     none.wav,                       0, 0.80, 0
+$Name:  170     none.wav,                       0, 0.80, 0
+$Name:  171     none.wav,                       0, 0.80, 0
+$Name:  172     none.wav,                       0, 0.80, 0
+$Name:  173     none.wav,                       0, 0.80, 0
+$Name:  174     none.wav,                       0, 0.80, 0
+$Name:  175     snd_engine_loop_large_1.wav,    0, 0.80, 2,   50, 1000  ; large engine (3d sound)
+$Name:  176     snd_engine_loop_large_2.wav,    0, 0.80, 2,   50, 1000  ; large engine (3d sound)
+$Name:  177     none.wav,                       0, 0.80, 0
+$Name:  178     none.wav,                       0, 0.80, 0
+$Name:  179     none.wav,                       0, 0.80, 0
+$Name:  180     snd_lightning_1.wav,            0, 0.60, 0              ; Thunder 1 sound in neblua
+$Name:  181     snd_lightning_2.wav,            0, 0.60, 0              ; Thunder 2 sound in neblua
+$Name:  182     snd_lightning_3.wav,            0, 0.60, 0              ; Thunder 3 sound in neblua
+$Name:  183     snd_lightning_4.wav,            0, 0.60, 0              ; Thunder 4 sound in neblua
+$Name:  184     none.wav,                       0, 0.80, 0
+$Name:  185     none.wav,                       0, 0.80, 0
+$Name:  186     none.wav,                       0, 0.80, 0
+$Name:  187     none.wav,                       0, 0.80, 0
+$Name:  188     none.wav,                       0, 0.80, 0
+$Name:  189     none.wav,                       0, 0.80, 0
+$Name:  190     snd_installation_1.wav,         0, 0.80, 2, 1500, 3000  ; Installation 1
+$Name:  191     snd_installation_2.wav,         0, 0.80, 2, 1500, 3000  ; Installation 2
+;
+#Game Sounds End
+;
+#Interface Sounds Start
+$Name:    0     snd_iface_mouse_click.wav,      0, 0.70, 0              ; mouse click
+$Name:    1     none.wav,                       0, 0.70, 0              ; pick up a ship icon (not used)
+$Name:    2     snd_icon_drop_on_wing.wav,      0, 0.60, 0              ; drop a ship icon on a wing slot
+$Name:    3     snd_icon_drop.wav,              0, 0.60, 0              ; drop a ship icon back to the list
+$Name:    4     snd_screen_mode_pressed.wav,    0, 0.70, 0              ; press briefing, ship selection or weapons bar (top-left)
+$Name:    5     snd_switch_screens.wav,         0, 0.70, 0              ; Switching to a new screen, but not commit
+$Name:    6     snd_help_pressed.wav,           0, 0.70, 0              ; help pressed
+$Name:    7     snd_commit_pressed.wav,         0, 0.60, 0              ; commit pressed
+$Name:    8     snd_prev_next_pressed.wav,      0, 0.70, 0              ; prev/next pressed
+$Name:    9     snd_scroll.wav,                 0, 0.70, 0              ; scroll pressed (and scroll)
+$Name:   10     snd_general_fail.wav,           0, 0.70, 0              ; general failure sound for any event
+$Name:   11     snd_ship_icon_change.wav,       0, 0.50, 0              ; ship animation starts (ie text and ship first appear)
+$Name:   12     none.wav,                       0, 0.60, 0              ; ambient sound for the Terran main hall (looping)
+$Name:   13     none.wav,                       0, 0.60, 0              ; ambient sound for the Vasudan main hall (looping)
+$Name:   14     snd_brief_stage_chg.wav,        0, 0.70, 0              ; brief stage change
+$Name:   15     snd_brief_stage_chg_fail.wav,   0, 0.70, 0              ; brief stage change fail
+$Name:   16     snd_brief_icon_select.wav,      0, 0.70, 0              ; selet brief icon
+$Name:   17     snd_user_over.wav,              0, 0.50, 0              ; user_over (mouse over a control)
+$Name:   18     snd_user_select.wav,            0, 0.70, 0              ; user_click (mouse selects a control)
+$Name:   19     snd_reset_pressed.wav,          0, 0.70, 0              ; reset (or similar button) pressed
+$Name:   20     snd_brief_text_wipe.wav,        0, 0.60, 0              ; briefing text wipe
+$Name:   21     none.wav,                       0, 0.50, 0              ; main hall - elevator
+$Name:   22     snd_weapon_anim_start.wav,      0, 0.60, 0              ; weapon animation starts
+$Name:   23     snd_main_hall_door_open.wav,    0, 0.50, 0              ; door in main hall opens
+$Name:   24     snd_main_hall_door_close.wav,   0, 0.50, 0              ; door in main hall closes
+$Name:   25     none.wav,                       0, 0.50, 0              ; glow in main hall opens
+$Name:   26     none.wav,                       0, 0.50, 0              ; main hall - crane 1
+$Name:   27     none.wav,                       0, 0.60, 0              ; ambient sound for menus off the main hall (looping)
+$Name:   28     snd_popup_appear.wav,           0, 0.70, 0              ; popup dialog box appeared
+$Name:   29     snd_popup_disappear.wav,        0, 0.70, 0              ; popup dialog box goes away
+$Name:   30     snd_voice_slider_clip.wav,      0, 1.00, 0              ; voice clip played when volume slider changes
+$Name:   31     none.wav,                       0, 0.50, 0              ; main hall - crane 2
+$Name:   32     none.wav,                       0, 0.70, 0              ; main hall options - mouse on 
+$Name:   33     none.wav,                       0, 0.70, 0              ; main hall options - mouse off
+$Name:   34     none.wav,                       0, 0.70, 0              ; main hall tech room - mouse on
+$Name:   35     none.wav,                       0, 0.70, 0              ; main hall tech room - mouse off
+$Name:   36     snd_main_hall_weld3.wav,        0, 1.00, 0              ; main hall exit open
+$Name:   37     snd_main_hall_weld4.wav,        0, 1.00, 0              ; main hall exit close
+$Name:   38     none.wav,                       0, 0.80, 0
+$Name:   39     none.wav,                       0, 0.80, 0
+$Name:   40     none.wav,                       0, 0.80, 0
+$Name:   41     snd_icon_highlight.wav,         0, 0.40, 0              ; spinning highlight in briefing
+$Name:   42     snd_briefing_static.wav,        0, 0.40, 0              ; static in a briefing stage cut
+$Name:   43     snd_main_hall2_crane1_1.wav,    0, 1.00, 0              ; skiff loop
+$Name:   44     snd_main_hall_pa_1.wav,         0, 1.00, 0              ; main hall random intercom 1
+$Name:   45     snd_main_hall_pa_2.wav,         0, 1.00, 0              ; main hall random intercom 2
+$Name:   46     snd_main_hall_pa_3.wav,         0, 1.00, 0              ; main hall random intercom 3
+$Name:   47     snd_main_hall_pa_4.wav,         0, 1.00, 0              ; main hall random intercom 4
+$Name:   48     snd_main_hall_pa_5.wav,         0, 1.00, 0              ; main hall random intercom 5
+$Name:   49     snd_main_hall_pa_6.wav,         0, 1.00, 0              ; main hall random intercom 6
+$Name:   50     snd_main_hall_pa_7.wav,         0, 1.00, 0              ; main hall random intercom 7
+$Name:   51     snd_main_hall_pa_8.wav,         0, 1.00, 0              ; main hall random intercom 8
+$Name:   52     snd_main_hall_pa_9.wav,         0, 1.00, 0              ; main hall random intercom 9
+$Name:   53     snd_main_hall_pa_10.wav,        0, 1.00, 0              ; main hall random intercom 10
+$Name:   54     snd_main_hall_pa_11.wav,        0, 1.00, 0              ; main hall random intercom 11
+$Name:   55     snd_main_hall_pa_12.wav,        0, 1.00, 0              ; main hall random intercom 12
+$Name:   56     snd_main_hall_pa_13.wav,        0, 1.00, 0              ; main hall random intercom 13
+$Name:   57     snd_main_hall_pa_14.wav,        0, 1.00, 0              ; main hall random intercom 14
+$Name:   58     snd_main_hall_pa_15.wav,        0, 1.00, 0              ; main hall random intercom 15
+$Name:   59     snd_main_hall_pa_16.wav,        0, 1.00, 0              ; main hall random intercom 16
+$Name:   60     snd_main_hall_pa_17.wav,        0, 1.00, 0              ; main hall random intercom 17
+$Name:   61     snd_main_hall_pa_18.wav,        0, 1.00, 0              ; main hall random intercom 18
+$Name:   62     none.wav,                       0, 0.80, 0
+$Name:   63     none.wav,                       0, 0.80, 0
+$Name:   64     none.wav,                       0, 0.80, 0
+
+#Interface Sounds End
+
+#Flyby Sounds Start
+
+$Terran:   0    snd_confed_flyby_fighter.wav,   0, 0.75, 2,  200,  400  ; * Terran ship1 flyby player sound (3d sound)
+$Terran:   1    snd_confed_flyby_bomber.wav,    0, 0.75, 2,  200,  400  ; * Terran ship1 flyby player sound (3d sound)
+
+$Pirate:   0    snd_pirate_flyby_fighter.wav,   0, 0.75, 2,  200,  400  ; * Pirate ship1 flyby player sound (3d sound)
+$Pirate:   1    snd_pirate_flyby_bomber.wav,    0, 0.75, 2,  200,  400  ; * Pirate ship1 flyby player sound (3d sound)
+
+$Kilrathi: 0    snd_kilrathi_flyby_fighter.wav, 0, 0.75, 2,  200,  400  ; * Kilrathi ship1 flyby player sound (3d sound)
+$Kilrathi: 1    snd_kilrathi_flyby_bomber.wav,  0, 0.75, 2,  200,  400  ; * Kilrathi ship1 flyby player sound (3d sound)
+
+#Flyby Sounds End

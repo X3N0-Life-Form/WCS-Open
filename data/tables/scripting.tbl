@@ -1,0 +1,138 @@
+#Global Hooks
+
+$GameInit:
+[
+    -- Frame Helper Functions
+    getPrimaryFrame = function(weaponClassName)    
+        if (weaponClassName == "Plasma") then return 1 end
+        if (weaponClassName == "Meson") then return 2 end
+        if (weaponClassName == "Photon") then return 3 end
+        if (weaponClassName == "Ion") then return 4 end
+        if (weaponClassName == "Laser") then return 5 end
+        if (weaponClassName == "Neutron") then return 6 end
+        if (weaponClassName == "Tachyon") then return 7 end
+        if (weaponClassName == "Reaper") then return 8 end
+        if (weaponClassName == "Mass Driver") then return 9 end
+        if (weaponClassName == "Particle") then return 10 end
+        return 0
+    end
+
+    getSecondaryFrame = function(weaponClassName)    
+        if (weaponClassName == "Javelin HS") then return 1 end
+        if (weaponClassName == "Spiculum IR") then return 2 end
+        if (weaponClassName == "Pilum FF") then return 3 end
+        if (weaponClassName == "Lance") then return 4 end
+        if (weaponClassName == "Dart Dumbfire") then return 5 end
+        if (weaponClassName == "Porcupine") then return 6 end
+        if (weaponClassName == "Leech") then return 7 end
+        return 0
+    end
+
+    -- Color Helper Functions
+    getPrimaryColor = function(weaponClassName)    
+        if (weaponClassName == "Plasma") then return {165, 109, 193} end
+        if (weaponClassName == "Meson") then return {132, 197, 105} end
+        if (weaponClassName == "Photon") then return {240, 179, 76} end
+        if (weaponClassName == "Ion") then return {165, 109, 193} end
+        if (weaponClassName == "Laser") then return {203, 63, 33} end
+        if (weaponClassName == "Neutron") then return {39, 93, 237} end
+        if (weaponClassName == "Tachyon") then return {230, 207, 63} end
+        if (weaponClassName == "Reaper") then return {101, 151, 186} end
+        if (weaponClassName == "Mass Driver") then return {182, 172, 191} end
+        if (weaponClassName == "Particle") then return {229, 168, 0} end
+        return {255, 255, 255}
+    end
+
+    getSecondaryColor = function(weaponClassName)    
+        if (weaponClassName == "Javelin HS") then return {240, 76, 39} end
+        if (weaponClassName == "Spiculum IR") then return {230, 207, 63} end
+        if (weaponClassName == "Pilum FF") then return {39, 93, 237} end
+        if (weaponClassName == "Lance") then return {240, 147, 67} end
+        if (weaponClassName == "Dart Dumbfire") then return {138, 81, 158} end
+        if (weaponClassName == "Porcupine") then return {239, 56, 24} end
+        if (weaponClassName == "Leech") then return {113, 186, 85} end
+        return {255, 255, 255}
+    end
+    
+    makePrimarySelection = function(plr)
+         for i=1, #plr.PrimaryBanks do
+            if (plr.PrimaryBanks[i].Armed or plr.PrimaryBanks.Linked) then
+                --hu.setCustomGaugeColor("HP_PBank" .. i .. "_L", primaryColor[i][1], primaryColor[i][2], primaryColor[i][3])
+                --hu.setCustomGaugeColor("HP_PBank" .. i .. "_R", primaryColor[i][1], primaryColor[i][2], primaryColor[i][3])
+            else
+                --hu.setCustomGaugeColor("HP_PBank" .. i .. "_L", 128, 128, 128)
+                --hu.setCustomGaugeColor("HP_PBank" .. i .. "_R", 128, 128, 128)
+            end
+        end
+    end
+    
+    makeSecondarySelection = function(plr)
+         for i=1, #plr.SecondaryBanks do
+            if (plr.SecondaryBanks[i].AmmoLeft == 0) then
+                --hu.setCustomGaugeFrame("HP_SBank" .. i, 0)	--WCS only
+            else
+                if (plr.SecondaryBanks[i].Armed) then
+                    --hu.setCustomGaugeColor("HP_SBank" .. i, secondaryColor[i][1], secondaryColor[i][2], secondaryColor[i][3])
+                else
+                    --hu.setCustomGaugeColor("HP_SBank" .. i, 128, 128, 128)
+                end
+            end
+        end
+    end
+    
+    playerShip = nil
+    primaryFrame = {}
+    primaryColor = {}
+    secondaryColor = {}
+]
+
+$HUD:
+[
+    -- Initialization Section
+    isInitalized = false
+    
+    if (not isInitalized) then
+        playerShip = hv.Player
+        
+        if (playerShip:isValid()) then    
+            -- Set Primary Bank Data
+            for i=1, #playerShip.PrimaryBanks do
+                primaryFrame[i] = getPrimaryFrame(playerShip.PrimaryBanks[i].WeaponClass.Name)
+                primaryColor[i] = getPrimaryColor(playerShip.PrimaryBanks[i].WeaponClass.Name)
+                --hu.setCustomGaugeFrame("HP_PBank" .. i .. "_L", primaryFrame[i])
+                --hu.setCustomGaugeFrame("HP_PBank" .. i .. "_R", primaryFrame[i])
+            end
+
+            -- Set Secondary Bank Data
+            for j=1, #playerShip.SecondaryBanks do
+                --hu.setCustomGaugeFrame("HP_SBank" .. j, getSecondaryFrame(playerShip.SecondaryBanks[j].WeaponClass.Name))
+                secondaryColor[j] = getSecondaryColor(playerShip.SecondaryBanks[j].WeaponClass.Name)
+            end
+        end
+     
+        isInitalized = true
+    end
+    
+    -- Weapon Selection Section
+    if missiontime == nil then
+        missiontime = mn.getMissionTime()
+        oldmissiontime = missiontime
+    end
+    
+    if (playerShip:isValid()) then
+        if missiontime ~= nil then
+            if hu.HUDDrawn then
+                missiontime = mn.getMissionTime()
+                
+                if oldmissiontime ~= missiontime then
+                    makePrimarySelection(playerShip)
+                    makeSecondarySelection(playerShip)
+                end
+            end
+            
+            oldmissiontime = missiontime
+        end
+    end
+]
+
+#End

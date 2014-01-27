@@ -1,0 +1,263 @@
+$Load Retail Configuration:	NO			
+$Font:				3
+$Max directives:	15			
+$Max escort ships:	15
+;$Length Unit Multiplier:            6.33333
+;$Highlight Tagged Ships:            NO		
+				
+#Gauge Config				
+	$Base:	(1440,900)		
+	$Min:	(1280,720)				
+	$Gauges:			
+		+Messages:		
+			Position:	(294,596)
+			Font:	0
+			Max Lines:	5
+			Max Width:	914
+		+Fixed Messages:		
+		+Training Messages:		
+			Position:	(587,191)
+		+Multiplayer Messages:		
+			Position:	(216,306)
+		+Support:		
+			Position:	(667,346)
+		+Damage:		
+			Position:	(648,127)
+		+Wingman Status:		
+			Position:	(1348,210)
+		+Auto Speed:		
+			Position:	(1376,804)
+		+Auto Target:		
+			Position:	(1376,780)
+		+Countermeasures:		
+			Position:	(1296,734)
+		+Talking Head:		
+			Position:	(266,456)
+		+Directives:		
+			Position:	(5,344)
+		+Weapons:		
+			Position:	(1296,637)
+			Font:	3
+		+Objective Notify:		
+			Position:	(644,292)
+		+Squad Message:		
+			Position:	(1243,5)
+		+Escort View:		
+			Position:	(1281,462)
+		;+ETS Weapons:		
+		;	Position:	(1296,780)
+		;+ETS Shields:		
+		;	Position:	(1314,780)
+		;+ETS Engines:		
+		;	Position:	(1332,780)
+		+ETS Retail:		
+			Position:	(1296,780)
+		+Target Monitor:		
+			Position:	(5,722)
+		+Extra Target Data:		
+			Position:	(5,684)
+		+Target Shields:		
+			Position:	(458,802)
+		+Radar:		
+			Position:	(619,722)
+		+Player Shields:		
+			Position:	(884,802)
+		+Afterburner Energy:		
+			Position:	(482,490)
+		+Weapon Energy:		
+			Position:	(874,490)
+		+Text Warnings:		
+			Position:	(720,341)
+		+Center Reticle:		
+			Position:	(701,436)
+			Firepoint display:	YES
+		+Mini Target Shields:		
+			Position:	(705,536)
+		+Throttle:		
+			Position:	(554,335)
+			Font:	3
+		+Threat Indicator:		
+			Position:	(782,335)
+		+Voice Status:		
+			Position:	(5,231)
+		+Ping:		
+			Position:	(1104,5)
+		+Lag:		
+			Position:	(835,5)
+		+Supernova:		
+			Position:	(170,170)
+		+Hostile Triangle:		
+			Position:	(720,450)
+		+Target Triangle:		
+			Position:	(720,450)
+		+Missile Triangles:		
+			Position:	(720,450)
+		+Orientation Tee:		
+			Position:	(720,450)
+		+Target Brackets:		
+		+Lead Indicator:		
+		+Lock Indicator:		
+		+Offscreen Indicator:		
+			Position:	(720,450)
+		+Mission Time:		
+			Position:	(1385,848)
+		+Kills:		
+			Position:	(1296,756)
+			
+		;;WCS Custom Gauges
+		+Custom:		
+			Position: 	(691,265)
+			Name:	Autopilot
+			Text:	
+			Gauge Type: 	RETICLE_CIRCLE
+			Slew: 	YES
+			Active by default: 	YES
+			Filename: 	autopilot
+		+Custom:		
+			Position: 	(555,285)
+			Name:	Central Reticle
+			Text:	
+			Gauge Type: 	RETICLE_CIRCLE
+			Slew: 	YES
+			Active by default: 	YES
+			Filename: 	central
+		+Hardpoints:
+			Position: 					(1280, 460)
+			Size: 						(150, 150)
+			Line Width: 					2
+			View Direction: 				Top
+			Show Primary Weapons: 				yes
+			Show Secondary Weapons: 			yes
+	$End Gauges		
+
+#End
+
+
+#Gauge Config
+	$Base: 													(1024, 768)
+	$Required Aspect: 										Full Screen
+	$Min: 													(1024, 768)
+	$Gauges:
+		+Messages:
+			;Position: 										(5, 5)
+			Position: 										(210, 530)
+			Font:											0
+			Max Lines: 										5
+			Max Width: 										650
+		+Fixed Messages:
+			;Position: 										()
+		+Training Messages:
+			Position: 										(379, 125)
+		+Multiplayer Messages:
+			Position: 										(8, 240)
+		+Support:
+			;Position: 										(459, 534)
+			Position: 										(459, 214)
+		+Damage:
+			Position: 										(440, 61)
+		+Wingman Status:
+			Position: 										(932, 144)
+		+Auto Speed:
+			Position: 										(960, 672)
+		+Auto Target:
+			Position: 										(960, 648)
+		+Countermeasures:
+			Position: 										(880, 602)
+		+Talking Head:
+			Position: 										(100, 390)
+		+Directives:
+			Position: 										(5, 278)
+		+Weapons:
+			Position: 										(880, 525)
+			Font:											3
+		+Objective Notify:
+			Position: 										(436, 184)
+		+Squad Message:
+			Position: 										(827, 5)
+		+Player Shields:
+			Position: 										(634, 670)
+		+Target Shields:
+			Position: 										(292,	670)
+		+Escort View:
+			Position: 										(865, 330)
+		;+ETS Weapons:
+		;	Position: 										(880, 648)
+		;+ETS Shields:
+		;	Position: 										(898, 648)
+		;+ETS Engines:
+		;	Position: 										(916, 648)
+		+ETS Retail:
+			Position: 										(880, 648)
+		+Target Monitor:
+			Position: 										(5, 590)
+		+Extra Target Data:
+			Position: 										(5, 552)
+		+Radar:
+			Position: 										(411, 590)
+		+Afterburner Energy:
+			Position: 										(274, 424)
+		+Text Warnings:
+			Position: 										(512, 275)
+		+Center Reticle:
+			Position: 										(493, 370)
+			Firepoint display: 								YES
+		+Mini Target Shields:
+			Position: 										(497, 470)
+		+Throttle:
+			Position: 										(346, 269)
+			Font:											3
+		+Threat Indicator:
+			Position: 										(574, 269)
+		+Voice Status:
+			position: 										(5, 165)
+		+Ping:
+			Position: 										(896, 5)
+		+Lag:
+			;Position: 										(627, 529)
+			Position: 										(627, 5)
+		+Supernova:
+			Position: 										(170, 170)
+		+Target Brackets:
+		+Lead Indicator:
+		+Lock Indicator:
+		+Offscreen Indicator:
+		+Hostile Triangle:
+			Position: 										(512, 387)
+		+Target Triangle:
+			Position: 										(512, 387)
+		+Missile Triangles:
+			Position: 										(512, 387)
+		+Orientation Tee:
+			Position: 										(512, 387)
+		+Weapon Energy:
+			Position: 										(666, 424)
+		+Mission Time:
+			Position: 										(969, 716)
+		+Kills:
+			Position: 										(880, 624)
+		+Custom:		
+			Position: 	(483,233)
+			Name:	Autopilot
+			Text:	
+			Gauge Type: 	RETICLE_CIRCLE
+			Slew: 	YES
+			Active by default: 	YES
+			Filename: 	autopilot
+		+Custom:		
+			Position: 	(347,219)
+			Name:	Central Reticle
+			Text:	
+			Gauge Type: 	RETICLE_CIRCLE
+			Slew: 	YES
+			Active by default: 	YES
+			Filename: 	central
+		+Hardpoints:
+			Position: 					(892, 385)
+			Size: 						(150, 150)
+			Line Width: 					2
+			View Direction: 				Top
+			Show Primary Weapons: 				yes
+			Show Secondary Weapons: 			yes
+	$End Gauges
+
+#End

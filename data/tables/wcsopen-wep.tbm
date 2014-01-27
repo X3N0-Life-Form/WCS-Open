@@ -1,0 +1,95 @@
+#Secondary Weapons
+
+$Name:                                  	@Dart Dumbfire
++nocreate
+$External Model File:			tcm_dart.pof
+
+$Name:                                 		@Pilum FF
++nocreate
+$External Model File:			misc_ghostmissile.pof
+
+$Name:                                  	@Javelin HS
++nocreate
+$External Model File:			tcm_javelin.pof
+
+$Name:                                  	@Spiculum IR
++nocreate
+$External Model File:			tcm_spiculum.pof
+
+$Name:                                  	@Porcupine
++nocreate
+$External Model File:			misc_ghostmissile.pof
+
+$Name:                                  	Lance
++nocreate
+$External Model File:			tcm_lance.pof
+
+$Name:                                  	Warhammer CSM
++nocreate
+$External Model File:			tcm_warhammer.pof
+
+$Name:                                  	Warhammer CSM#long_range
++nocreate
+$External Model File:			tcm_warhammer.pof
+
+$Name:                                  	@Spiculum IR#turretSP
++nocreate
+$External Model File:			tcm_spiculum.pof
+
+$Name:                                  	@Spiculum IR#turretMP
++nocreate
+$External Model File:			tcm_spiculum.pof
+
+$Name:                                  	@Paw
++nocreate
+$External Model File:			kim_paw.pof
+
+$Name:                                  	@Fang
++nocreate
+$External Model File:			kim_fang.pof
+
+$Name:                                  	@Stalker
++nocreate
+$External Model File:			kim_stalker.pof
+
+$Name:                                  	@Claw
++nocreate
+$External Model File:			kim_claw.pof
+
+$Name:                                  	@Claw#turret
++nocreate
+$External Model File:			kim_claw.pof
+
+$Name:                                  	@Fang Ace
++nocreate
+$External Model File:			kim_fang.pof
+
+$Name:                                  	@Fang Ace
++nocreate
+$External Model File:			kim_fang.pof
+
+$Name:                                  	@Fang Ace
++nocreate
+$External Model File:			kim_fang.pof
+
+$Name:                                  	@Claw Ace
++nocreate
+$External Model File:			kim_claw.pof
+
+$Name:                                  	@Scratch
++nocreate
+$External Model File:			misc_ghostmissile.pof
+
+$Name:                                  	@Spear
++nocreate
+$External Model File:			kim_spear.pof
+
+$Name:                                  	@Predator
++nocreate
+$External Model File:			kim_cruise_missile.pof
+
+$Name:                                  	@Predator#LongRange
++nocreate
+$External Model File:			kim_cruise_missile.pof
+
+#End
