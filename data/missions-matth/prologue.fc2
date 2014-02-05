@@ -1,0 +1,100 @@
+$Name: Prologue
+$Type: single
++Description:
+ XSTR("Desperate to replace the combat losses suffered in the Battle of Terra, the Confederation has turned to its Officer Candidate School (OCS) programs to fill the ranks. You assume the role of 2nd Lieutenant David Markham, a recent OCS graduate in an accelerated flight training program on an aging, dilapidated carrier in a backwater system.", -1)
+$end_multi_text
+$Flags: 3
+
+;+Campaign Intro Cutscene: prologue_intro.ogg	;;WCS only
+;+Campaign End Cutscene: prologue_outro.ogg		;;WCS only
+
++Starting Ships: ( "F-27B Arrow"  "F-86C Hellcat V"  "F-66A Thunderbolt VII"  "F-57B Sabre"  "F/A-76A Longbow" )
+
++Starting Weapons: ( "Ion"  "Laser"  "Mass Driver"  "Meson"  "Neutron"  "Particle"  "Photon"  "Plasma"  "Dart Dumbfire"  "Pilum FF"  "Javelin HS"  "Spiculum IR"  "Porcupine"  "Lance" )
+
+
+$Mission: Demo-01-BG-Hermes.fs2
++Flags: 0
++Main Hall: 1
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "Demo-01-BG-Hermes.fs2" 
+         "Basic flight training" 
+      )
+      ( next-mission "Demo-02-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "Demo-01-BG-Hermes.fs2" ) )
+)
+
++Level: 0
++Position: 0
+
+$Mission: Demo-02-BG-Hermes.fs2
++Flags: 0
++Main Hall: 1
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( and 
+         ( is-previous-goal-true 
+            "Demo-02-BG-Hermes.fs2" 
+            "Escort TCS Aurora" 
+         )
+         ( not 
+            ( or 
+               ( is-previous-event-true 
+                  "Demo-02-BG-Hermes.fs2" 
+                  "Player disobeyed" 
+               )
+               ( is-previous-event-true 
+                  "Demo-02-BG-Hermes.fs2" 
+                  "Mission Failed" 
+               )
+            )
+         )
+      )
+      ( next-mission "Demo-03-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "Demo-02-BG-Hermes.fs2" ) )
+)
+
++Level: 1
++Position: 0
+
+$Mission: Demo-03-BG-Hermes.fs2
++Flags: 0
++Main Hall: 1
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "Demo-04-BG-Hermes.fs2" ) )
+)
+
++Level: 2
++Position: 0
+
+$Mission: Demo-04-BG-Hermes.fs2
++Flags: 0
++Main Hall: 1
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "Demo-05-BG-Hermes.fs2" ) )
+)
+
++Level: 3
++Position: 0
+
+$Mission: Demo-05-BG-Hermes.fs2
++Flags: 0
++Main Hall: 1
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( end-of-campaign ) )
+)
+
++Level: 4
++Position: 0
+
+#End
+
