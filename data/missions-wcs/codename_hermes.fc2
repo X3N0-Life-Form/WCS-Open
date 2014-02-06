@@ -1,0 +1,641 @@
+$Name: The Darkest Dawn
+$Type: single
++Description:
+ XSTR("The flagship campaign of Wing Commander Saga 'The Darkest Dawn' begins right before Wing Commander III and concludes with the ending of the Terran-Kilrathi War. Whether or not the Terrans win depends on you.
+
+It has been six months since the Battle of Earth, and inspite of new fighters, carriers, and technology joining the Fleet, the war effort is not going well. Everyday, more news of fresh defeats and losses make their way around the Confederation Forward Fleet, who have to face the possibility that they will not be the ultimate victors.
+
+You are based on the TCS Hermes, one of the handful of large carriers left on the front line. You play the role of 2nd Lieutenant David Markham, a pilot recently transferred to the Hermes.", -1)
+$end_multi_text
+$Flags: 3
+
++Campaign Intro Cutscene: hermes_intro.ogg
++Campaign End Cutscene: hermes_credits.ogg
+
++Starting Ships: ( "F-27B Arrow"  "F-86C Hellcat V"  "F-66A Thunderbolt VII"  "F-57B Sabre"  "F/A-76A Longbow" )
+
++Starting Weapons: ( "Ion"  "Laser"  "Mass Driver"  "Meson"  "Neutron"  "Particle"  "Photon"  "Plasma"  "Dart Dumbfire"  "Pilum FF"  "Javelin HS"  "Spiculum IR"  "Porcupine"  "Lance" )
+
+
+$Mission: M01-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "M01-BG-Hermes.fs2" 
+         "Patrol Area" 
+      )
+      ( next-mission "M02-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "M01-BG-Hermes.fs2" ) )
+)
+
++Level: 0
++Position: 1
+
+$Mission: M02-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "M02-BG-Hermes.fs2" 
+         "Retreat" 
+      )
+      ( next-mission "M03-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "M02-BG-Hermes.fs2" ) )
+)
+
++Level: 1
++Position: 1
+
+$Mission: M03-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "M03-BG-Hermes.fs2" 
+         "Defend battlegroup" 
+      )
+      ( next-mission "M04-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "M03-BG-Hermes.fs2" ) )
+)
+
++Level: 2
++Position: 1
+
+$Mission: M04-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M05-BG-Hermes.fs2" ) )
+)
+
++Level: 3
++Position: 1
+
+$Mission: M05-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M06-BG-Hermes.fs2" ) )
+)
+
++Level: 4
++Position: 1
+
+$Mission: M06-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M07-BG-Hermes.fs2" ) )
+)
+
++Level: 5
++Position: 1
+
+$Mission: M07-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M08-BG-Hermes.fs2" ) )
+)
+
++Level: 6
++Position: 1
+
+$Mission: M08-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M09-BG-Hermes.fs2" ) )
+)
+
++Level: 7
++Position: 1
+
+$Mission: M09-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M10-BG-Hermes.fs2" ) )
+)
+
++Level: 8
++Position: 1
+
+$Mission: M10-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M11-BG-Hermes.fs2" ) )
+)
+
++Level: 9
++Position: 1
+
+$Mission: M11-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M12-BG-Hermes.fs2" ) )
+)
+
++Level: 10
++Position: 1
+
+$Mission: M12-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M13-BG-Hermes.fs2" ) )
+)
+
++Level: 11
++Position: 1
+
+$Mission: M13-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M14-BG-Hermes.fs2" ) )
+)
+
++Level: 12
++Position: 1
+
+$Mission: M14-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M15-BG-Hermes.fs2" ) )
+)
+
++Level: 13
++Position: 1
+
+$Mission: M15-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M16-BG-Hermes.fs2" ) )
+)
+
++Level: 14
++Position: 1
+
+$Mission: M16-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M17-BG-Hermes.fs2" ) )
+)
+
++Level: 15
++Position: 1
+
+$Mission: M17-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M18-BG-Hermes.fs2" ) )
+)
+
++Level: 16
++Position: 1
+
+$Mission: M18-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "M18-BG-Hermes.fs2" 
+         "Escort survivors" 
+      )
+      ( next-mission "M19-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "M18-BG-Hermes.fs2" ) )
+)
+
++Level: 17
++Position: 1
+
+$Mission: M19-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M20-BG-Hermes.fs2" ) )
+)
+
++Level: 18
++Position: 1
+
+$Mission: M20-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M21-BG-Hermes.fs2" ) )
+)
+
++Level: 19
++Position: 1
+
+$Mission: M21-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M22-BG-Hermes.fs2" ) )
+)
+
++Level: 20
++Position: 1
+
+$Mission: M22-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M23-BG-Hermes.fs2" ) )
+)
+
++Level: 21
++Position: 1
+
+$Mission: M23-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M24-BG-Hermes.fs2" ) )
+)
+
++Level: 22
++Position: 1
+
+$Mission: M24-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M25-BG-Hermes.fs2" ) )
+)
+
++Level: 23
++Position: 1
+
+$Mission: M25-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M26-BG-Hermes.fs2" ) )
+)
+
++Level: 24
++Position: 1
+
+$Mission: M26-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "M26-BG-Hermes.fs2" 
+         "Bluepoint captured" 
+      )
+      ( next-mission "M27-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "M26-BG-Hermes.fs2" ) )
+)
+
++Level: 25
++Position: 1
+
+$Mission: M27-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M28-BG-Hermes.fs2" ) )
+)
+
++Level: 26
++Position: 1
+
+$Mission: M28-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M29-BG-Hermes.fs2" ) )
+)
+
++Level: 27
++Position: 1
+
+$Mission: M29-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M30-BG-Hermes.fs2" ) )
+)
+
++Level: 28
++Position: 1
+
+$Mission: M30-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M31-BG-Hermes.fs2" ) )
+)
+
++Level: 29
++Position: 1
+
+$Mission: M31-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M32-BG-Hermes.fs2" ) )
+)
+
++Level: 30
++Position: 1
+
+$Mission: M32-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M33-BG-Hermes.fs2" ) )
+)
+
++Level: 31
++Position: 1
+
+$Mission: M33-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M34-BG-Hermes.fs2" ) )
+)
+
++Level: 32
++Position: 1
+
+$Mission: M34-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M35-BG-Hermes.fs2" ) )
+)
+
++Level: 33
++Position: 1
+
+$Mission: M35-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M36-BG-Hermes.fs2" ) )
+)
+
++Level: 34
++Position: 1
+
+$Mission: M36-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "M36-BG-Hermes.fs2" 
+         "Rendezvous with the Oriskany" 
+      )
+      ( next-mission "M37-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "M36-BG-Hermes.fs2" ) )
+)
+
++Level: 35
++Position: 1
+
+$Mission: M37-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M38-BG-Hermes.fs2" ) )
+)
+
++Level: 36
++Position: 1
+
+$Mission: M38-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "M38-BG-Hermes.fs2" 
+         "Routine Patrol" 
+      )
+      ( next-mission "M39-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "M38-BG-Hermes.fs2" ) )
+)
+
++Level: 37
++Position: 1
+
+$Mission: M39-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M40-BG-Hermes.fs2" ) )
+)
+
++Level: 38
++Position: 1
+
+$Mission: M40-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "M40-BG-Hermes.fs2" 
+         "Defend the TCS Armageddon" 
+      )
+      ( next-mission "M41-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "M40-BG-Hermes.fs2" ) )
+)
+
++Level: 39
++Position: 1
+
+$Mission: M41-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "M41-BG-Hermes.fs2" 
+         "Destroy all Kilrathi Vessels" 
+      )
+      ( next-mission "M42-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "M41-BG-Hermes.fs2" ) )
+)
+
++Level: 40
++Position: 1
+
+$Mission: M42-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "M42-BG-Hermes.fs2" 
+         "Cover the Invincible" 
+      )
+      ( next-mission "M43-BG-Hermes.fs2" )
+   )
+   ( ( true ) ( next-mission "M42-BG-Hermes.fs2" ) )
+)
+
++Level: 41
++Position: 1
+
+$Mission: M43-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M44-BG-Hermes.fs2" ) )
+)
+
++Level: 42
++Position: 1
+
+$Mission: M44-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M45-BG-Hermes.fs2" ) )
+)
+
++Level: 43
++Position: 1
+
+$Mission: M45-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M46-BG-Hermes.fs2" ) )
+)
+
++Level: 44
++Position: 1
+
+$Mission: M46-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M47-BG-Hermes.fs2" ) )
+)
+
++Level: 45
++Position: 1
+
+$Mission: M47-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M48-BG-Hermes.fs2" ) )
+)
+
++Level: 46
++Position: 1
+
+$Mission: M48-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M49-BG-Hermes.fs2" ) )
+)
+
++Level: 47
++Position: 1
+
+$Mission: M49-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "M50-BG-Hermes.fs2" ) )
+)
+
++Level: 48
++Position: 1
+
+$Mission: M50-BG-Hermes.fs2
++Flags: 0
++Main Hall: 0
++Debriefing Persona Index: 0
++Formula: ( cond
+   ( ( true ) ( end-of-campaign ) )
+)
+
++Level: 49
++Position: 1
+
+#End
+
