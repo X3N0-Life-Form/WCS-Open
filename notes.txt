@@ -1,0 +1,3 @@
+need to merge missions with stuff more complex than skip dialogue & hints as well
+
+M20 has a set scannable SEXP

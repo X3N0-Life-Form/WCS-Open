@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Vega 1", -1)
 $Author: Romanyuk, Schmitt
 $Created: 03/26/06 at 10:42:26
-$Modified: 01/07/12 at 00:24:10
+$Modified: 03/06/13 at 18:30:49
 $Notes:
 Story by Nick Huynh and Brian Swift$End Notes:
 
@@ -23,11 +23,11 @@ $end_multi_text
 
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: 543.973328, 841.606873, -1080.093506
++Viewer pos: 67002.648438, -5662.189941, -6532.754395
 +Viewer orient:
-	0.893125, 0.000000, 0.449809,
-	-0.256937, 0.820802, 0.510164,
-	-0.369204, -0.571213, 0.733078
+	-0.969724, -0.000001, -0.244204,
+	0.077013, 0.948970, -0.305819,
+	0.231743, -0.315367, -0.920238
 +SquadReassignName: 811th Blood Hounds
 +SquadReassignLogo: Bloodhounds.pcx
 
