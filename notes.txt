@@ -1,3 +1,20 @@
-need to merge missions with stuff more complex than skip dialogue & hints as well
+What is needed
+==============
+ship flags:			Note: FRED gui stuff is way over my head
+	no-arrival-log		- needs testing
+	no-departure-log	- needs testing
+	hide-log-entries	- needs testing
+	is_harmless
 
-M20 has a set scannable SEXP
+wing flags:
+	no-arrival-log		- needs testing
+	no-departure-log	- needs testing
+
+SEXPs:
+	lock-controls
+	set-scannable		- use alter-ship-flags
+
+=================================================================
+
+
+need to merge missions with stuff more complex than skip dialogue & hints as well
