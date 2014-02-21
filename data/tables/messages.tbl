@@ -14453,7 +14453,7 @@ $Message: XSTR("This is Delta wing. We're here and ready for action.", -1)
 +Wave Name: venom_13.wav
 
 $Name: Gamma Arrived
-$Message: XSTR("This is Echo wing. We are here and ready for action.", -1
+$Message: XSTR("This is Echo wing. We are here and ready for action.", -1)
 +Persona: Venom
 +Avi Name: Head-VENOM1
 +Wave Name: venom_14.wav
