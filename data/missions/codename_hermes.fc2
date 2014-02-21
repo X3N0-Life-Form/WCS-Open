@@ -9,8 +9,8 @@ You are based on the TCS Hermes, one of the handful of large carriers left on th
 $end_multi_text
 $Flags: 3
 
-+Campaign Intro Cutscene: hermes_intro.ogg
-+Campaign End Cutscene: hermes_credits.ogg
+;+Campaign Intro Cutscene: hermes_intro.ogg
+;+Campaign End Cutscene: hermes_credits.ogg
 
 +Starting Ships: ( "F-27B Arrow"  "F-86C Hellcat V"  "F-66A Thunderbolt VII"  "F-57B Sabre"  "F/A-76A Longbow" )
 
