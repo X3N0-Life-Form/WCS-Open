@@ -4,15 +4,28 @@ ship flags:			Note: FRED gui stuff is way over my head
 	no-arrival-log		- needs testing
 	no-departure-log	- needs testing
 	hide-log-entries	- needs testing
-	is_harmless
+	is_harmless		- parsed, but doesn't do anything for now; should also replace '_' with '-'
 
 wing flags:
 	no-arrival-log		- needs testing
 	no-departure-log	- needs testing
 
 SEXPs:
-	lock-controls
+	lock-controls		- needs testing
 	set-scannable		- use alter-ship-flags
+	trigger-arrival-track	- use play-sound-from-file
+
+tables:
+	double hud syndrome
+	remove BP entries
+
+other:
+	command anis are buggy
+	game complains about rank medal
+	head anis seem to always play the death animation
+	review launch helper event
+	? possible wonky stuff with the in-mission soundtrack ?
+
 
 =================================================================
 
