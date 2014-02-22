@@ -6,11 +6,12 @@ $Max escort ships:	15
 ;$Highlight Tagged Ships:            NO		
 				
 #Gauge Config				
-	$Base:	(1440,900)		
+	$Base:	(1440,900)
+	$Required Aspect: 	Wide Screen
 	$Min:	(1280,720)				
 	$Gauges:			
 		+Messages:		
-			Position:	(294,596)
+			Position:	(5,5)
 			Font:	0
 			Max Lines:	5
 			Max Width:	914
@@ -32,7 +33,7 @@ $Max escort ships:	15
 		+Countermeasures:		
 			Position:	(1296,734)
 		+Talking Head:		
-			Position:	(266,456)
+			Position:	(5,30)
 		+Directives:		
 			Position:	(5,344)
 		+Weapons:		
@@ -140,7 +141,7 @@ $Max escort ships:	15
 	$Gauges:
 		+Messages:
 			;Position: 										(5, 5)
-			Position: 										(210, 530)
+			Position: 										(5, 5)
 			Font:											0
 			Max Lines: 										5
 			Max Width: 										650
@@ -164,7 +165,7 @@ $Max escort ships:	15
 		+Countermeasures:
 			Position: 										(880, 602)
 		+Talking Head:
-			Position: 										(100, 390)
+			Position: 										(5, 30)
 		+Directives:
 			Position: 										(5, 278)
 		+Weapons:

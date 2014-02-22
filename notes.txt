@@ -16,8 +16,9 @@ SEXPs:
 	trigger-arrival-track	- use play-sound-from-file
 
 tables:
-	double hud syndrome
-	remove BP entries
+	double hud syndrome			-done
+	remove BP entries (msg + head position)	-done
+	merge hud table functionalities
 
 other:
 	command anis are buggy
