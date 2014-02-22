@@ -2,7 +2,8 @@ $Load Retail Configuration:	NO
 $Font:				3
 $Max directives:	15			
 $Max escort ships:	15
-;$Length Unit Multiplier:            6.33333
+$Length Unit Multiplier:            6.33333
+$Lock Wireframe Mode:               YES
 ;$Highlight Tagged Ships:            NO		
 				
 #Gauge Config				
