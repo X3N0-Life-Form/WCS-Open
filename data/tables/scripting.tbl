@@ -57,11 +57,11 @@ $GameInit:
     makePrimarySelection = function(plr)
          for i=1, #plr.PrimaryBanks do
             if (plr.PrimaryBanks[i].Armed or plr.PrimaryBanks.Linked) then
-                --hu.setCustomGaugeColor("HP_PBank" .. i .. "_L", primaryColor[i][1], primaryColor[i][2], primaryColor[i][3])
-                --hu.setCustomGaugeColor("HP_PBank" .. i .. "_R", primaryColor[i][1], primaryColor[i][2], primaryColor[i][3])
+                hu.setCustomGaugeColor("HP_PBank" .. i .. "_L", primaryColor[i][1], primaryColor[i][2], primaryColor[i][3])
+                hu.setCustomGaugeColor("HP_PBank" .. i .. "_R", primaryColor[i][1], primaryColor[i][2], primaryColor[i][3])
             else
-                --hu.setCustomGaugeColor("HP_PBank" .. i .. "_L", 128, 128, 128)
-                --hu.setCustomGaugeColor("HP_PBank" .. i .. "_R", 128, 128, 128)
+                hu.setCustomGaugeColor("HP_PBank" .. i .. "_L", 128, 128, 128)
+                hu.setCustomGaugeColor("HP_PBank" .. i .. "_R", 128, 128, 128)
             end
         end
     end
@@ -69,12 +69,12 @@ $GameInit:
     makeSecondarySelection = function(plr)
          for i=1, #plr.SecondaryBanks do
             if (plr.SecondaryBanks[i].AmmoLeft == 0) then
-                --hu.setCustomGaugeFrame("HP_SBank" .. i, 0)	--WCS only
+                hu.setCustomGaugeFrame("HP_SBank" .. i, 0)	--WCS only
             else
                 if (plr.SecondaryBanks[i].Armed) then
-                    --hu.setCustomGaugeColor("HP_SBank" .. i, secondaryColor[i][1], secondaryColor[i][2], secondaryColor[i][3])
+                    hu.setCustomGaugeColor("HP_SBank" .. i, secondaryColor[i][1], secondaryColor[i][2], secondaryColor[i][3])
                 else
-                    --hu.setCustomGaugeColor("HP_SBank" .. i, 128, 128, 128)
+                    hu.setCustomGaugeColor("HP_SBank" .. i, 128, 128, 128)
                 end
             end
         end
@@ -99,13 +99,13 @@ $HUD:
             for i=1, #playerShip.PrimaryBanks do
                 primaryFrame[i] = getPrimaryFrame(playerShip.PrimaryBanks[i].WeaponClass.Name)
                 primaryColor[i] = getPrimaryColor(playerShip.PrimaryBanks[i].WeaponClass.Name)
-                --hu.setCustomGaugeFrame("HP_PBank" .. i .. "_L", primaryFrame[i])
-                --hu.setCustomGaugeFrame("HP_PBank" .. i .. "_R", primaryFrame[i])
+                hu.setCustomGaugeFrame("HP_PBank" .. i .. "_L", primaryFrame[i])
+                hu.setCustomGaugeFrame("HP_PBank" .. i .. "_R", primaryFrame[i])
             end
 
             -- Set Secondary Bank Data
             for j=1, #playerShip.SecondaryBanks do
-                --hu.setCustomGaugeFrame("HP_SBank" .. j, getSecondaryFrame(playerShip.SecondaryBanks[j].WeaponClass.Name))
+                hu.setCustomGaugeFrame("HP_SBank" .. j, getSecondaryFrame(playerShip.SecondaryBanks[j].WeaponClass.Name))
                 secondaryColor[j] = getSecondaryColor(playerShip.SecondaryBanks[j].WeaponClass.Name)
             end
         end

@@ -260,6 +260,398 @@ $Lock Wireframe Mode:               YES
 			View Direction: 				Top
 			Show Primary Weapons: 				yes
 			Show Secondary Weapons: 			yes
+		
+		+Custom:
+		;    +Default1024x:              9
+		;    +Default1024y:              2
+		;    +Parent:                    Hardpoints
+		;	$HP_Text:                   (9 2)
+        ;        +Text:                  Hardpoints
+        ;        +Inherit Color from:    weapons display
+			Position:					(901, 387)
+			Name:						HP_Text
+			Text:						Hardpoints
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					2_reticle1 ; ???
+   
+        
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_Silhouette:             (0 0)
+		;		+Inherit Color from:    weapons display
+			Position: 					(892, 385)
+			Name:                       HP_Silhouette
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					hp_sil_generic
+		
+        
+		
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_PBank1_L:               (54 14)
+			Position: 					(946, 399)
+			Name:                       HP_PBank1_L
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+		
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_PBank1_R:               (64 14)
+			Position: 					(956, 399)
+			Name:                       HP_PBank1_R
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+			
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_PBank2_L:               (45 22)
+			Position: 					(937, 407)
+			Name:                       HP_PBank2_L
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+			
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	HP_PBank2_R:               (73 22)
+			Position: 					(965, 407)
+			Name:                       HP_PBank2_R
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+			
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_PBank3_L:               (36 30)
+			Position: 					(928, 415)
+			Name:                       HP_PBank3_L
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+			
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_PBank3_R:               (82 30)
+			Position: 					(974, 415)
+			Name:                       HP_PBank3_R
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+		
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_SBank1:                 (28 55)
+			Position: 					(920, 430)
+			Name:                       HP_SBank1
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+		
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_SBank2:                 (93 55)
+			Position: 					(995, 430)
+			Name:                       HP_SBank2
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+		
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_SBank3:                 (18 55)
+			Position: 					(910, 430)
+			Name:                       HP_SBank3
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+		  
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_SBank4:                 (103 55)
+			Position: 					(995, 430)
+			Name:                       HP_SBank4
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_SBank5:                 (8 55)
+			Position: 					(900, 430)
+			Name:                       HP_SBank5
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+		
+		+Custom:
+		;    +Default1024x:              0
+		;    +Default1024y:              0
+		;    +Parent:                    Hardpoints
+		;	$HP_SBank6:                 (113 55)
+			Position: 					(1005, 430)
+			Name:                       HP_SBank6
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+	
 	$End Gauges
 
+#End
+
+;#Main Gauges
+;    $Default:                       (1024 768)
+;        $Player Shield:             (694 670)
+;        $Target Shield:             (232 670)
+;
+;        $Afterburner Energy:        (344 643)
+;            +Image:                 2_energy2
+;            +Move in Pan View:      false
+;
+;        $Weapons Energy:            (596 643)
+;            +Image:                 2_energy2
+;            +Move in Pan View:      false
+;
+;        $Weapons Energy Text:       (650 745)
+;        $Escort List:               (865 250)
+;
+;        $Autopilot:                 (483 233)
+;            +Image:                 autopilot
+;            +Inherit Color from:    center of reticle
+;            +Move in Pan View:      true
+;
+;        $Central Reticle:           (347 219)
+;            +Image:                 central
+;            +Inherit Color from:    center of reticle
+;            +Move in Pan View:      true
+;
+;        $Hardpoints:                (892 385)
+;            +Image:                 hardpoints1
+;            +Color:                 175 230 175
+;            +Inherit Color from:    weapons display
+;            +Move in Pan View:      false
+;            +Alignment:             2                     ; 0 = Left, 1 = Center, 2 = Right
+;#End
+
+
+#Ship Main Gauges
+    $Ship:                          F-27B Arrow
+        $Default:                   (1024 768)
+            $Afterburner Energy:    (344 643)
+                +Image:             2_energy2_arrow
+                
+            $Weapons Energy:        (596 643)
+                +Image:             2_energy2_arrow
+                
+            $Central Reticle:       (347 219)
+                +Image:             central_arrow
+
+    $Ship:                          F-57B Sabre
+        $Default:                   (1024 768)
+            $Afterburner Energy:    (344 643)
+                +Image:             2_energy2_sabre
+                
+            $Weapons Energy:        (596 643)
+                +Image:             2_energy2_sabre
+                
+            $Central Reticle:       (347 223)
+                +Image:             central_sabre
+
+    $Ship:                          F-66A Thunderbolt VII
+        $Default:                   (1024 768)
+            $Afterburner Energy:    (344 643)
+                +Image:             2_energy2_thunderbolt
+                
+            $Weapons Energy:        (596 643)
+                +Image:             2_energy2_thunderbolt
+                
+            $Central Reticle:       (279 219)
+                +Image:             central_thunderbolt
+
+    $Ship:                          F/A-76A Longbow
+        $Default:                   (1024 768)
+            $Afterburner Energy:    (344 643)
+                +Image:             2_energy2_longbow
+                
+            $Weapons Energy:        (596 643)
+                +Image:             2_energy2_longbow
+                
+            $Central Reticle:       (346 219)
+                +Image:             central_longbow
+
+    $Ship:                          F-86C Hellcat V
+        $Default:                   (1024 768)
+            $Afterburner Energy:    (344 643)
+                +Image:             2_energy2_hellcat
+                
+            $Weapons Energy:        (596 643)
+                +Image:             2_energy2_hellcat
+                
+            $Central Reticle:       (347 219)
+                +Image:             central_hellcat
+
+    $Ship:                          F-103A Excalibur
+        $Default:                   (1024 768)
+            $Afterburner Energy:    (344 643)
+                +Image:             2_energy2_excalibur
+                
+            $Weapons Energy:        (596 643)
+                +Image:             2_energy2_excalibur
+                
+            $Central Reticle:       (347 207)
+                +Image:             central_excalibur
+#End
+
+
+
+#Ship Gauges
+    $Ship:                              F-27B Arrow
+        $Default:                       (1024 768)
+            $Gauge:                     Hardpoints
+                $HP_Silhouette:         (0 0)
+                    +Image:             hp_sil_arrow
+                $HP_PBank1_L:           (50 18)
+                $HP_PBank1_R:           (68 18)
+                $HP_PBank2_L:           (40 32)
+                $HP_PBank2_R:           (78 32)
+                $HP_PBank3_L:           (0 0)
+                $HP_PBank3_R:           (0 0)
+                $HP_SBank1:             (22 47)
+                $HP_SBank2:             (28 47)
+                $HP_SBank3:             (93 47)
+                $HP_SBank4:             (99 47)
+                $HP_SBank5:             (0 0)
+                $HP_SBank6:             (0 0)
+
+    $Ship:                              F-57B Sabre
+        $Default:                       (1024 768)
+            $Gauge:                     Hardpoints
+                $HP_Silhouette:         (0 0)
+                    +Image:             hp_sil_sabre
+                $HP_PBank1_L:           (40 32)
+                $HP_PBank1_R:           (78 32)
+                $HP_PBank2_L:           (30 36)
+                $HP_PBank2_R:           (88 36)
+                $HP_PBank3_L:           (0 0)
+                $HP_PBank3_R:           (0 0)
+                $HP_SBank1:             (10 65)
+                $HP_SBank2:             (17 61)
+                $HP_SBank3:             (56 45)
+                $HP_SBank4:             (65 45)
+                $HP_SBank5:             (104 61)
+                $HP_SBank6:             (111 65)
+
+    $Ship:                              F-66A Thunderbolt VII
+        $Default:                       (1024 768)
+            $Gauge:                     Hardpoints
+                $HP_Silhouette:         (0 0)
+                    +Image:             hp_sil_thunderbolt
+                $HP_PBank1_L:           (49 20)
+                $HP_PBank1_R:           (69 20)
+                $HP_PBank2_L:           (39 33)
+                $HP_PBank2_R:           (79 33)
+                $HP_PBank3_L:           (29 41)
+                $HP_PBank3_R:           (89 41)
+                $HP_SBank1:             (19 64)
+                $HP_SBank2:             (60 40)
+                $HP_SBank3:             (102 64)
+                $HP_SBank4:             (0 0)
+                $HP_SBank5:             (0 0)
+                $HP_SBank6:             (0 0)
+
+    $Ship:                              F/A-76A Longbow
+        $Default:                       (1024 768)
+            $Gauge:                     Hardpoints
+                $HP_Silhouette:         (0 0)
+                    +Image:             hp_sil_longbow
+                $HP_PBank1_L:           (53 16)
+                $HP_PBank1_R:           (65 16)
+                $HP_PBank2_L:           (54 45)
+                $HP_PBank2_R:           (64 45)
+                $HP_PBank3_L:           (0 0)
+                $HP_PBank3_R:           (0 0)
+                $HP_SBank1:             (15 58)
+                $HP_SBank2:             (23 51)
+                $HP_SBank3:             (45 44)
+                $HP_SBank4:             (76 44)
+                $HP_SBank5:             (98 51)
+                $HP_SBank6:             (106 58)
+
+    $Ship:                              F-86C Hellcat V
+        $Default:                       (1024 768)
+            $Gauge:                     Hardpoints
+                $HP_Silhouette:         (0 0)
+                    +Image:             hp_sil_hellcat
+                $HP_PBank1_L:           (53 25)
+                $HP_PBank1_R:           (65 25)
+                $HP_PBank2_L:           (42 25)
+                $HP_PBank2_R:           (76 25)
+                $HP_PBank3_L:           (0 0)
+                $HP_PBank3_R:           (0 0)
+                $HP_SBank1:             (25 50)
+                $HP_SBank2:             (96 50)
+                $HP_SBank3:             (0 0)
+                $HP_SBank4:             (0 0)
+                $HP_SBank5:             (0 0)
+                $HP_SBank6:             (0 0)
+
+    $Ship:                              F-103A Excalibur
+        $Default:                       (1024 768)
+            $Gauge:                     Hardpoints
+                $HP_Silhouette:         (0 0)
+                    +Image:             hp_sil_excalibur
+                $HP_PBank1_L:           (26 54)
+                    +Image:             primary_dbl_left
+                $HP_PBank1_R:           (81 54)
+                    +Image:             primary_dbl_right
+                $HP_PBank2_L:           (53 24)
+                $HP_PBank2_R:           (65 24)
+                $HP_PBank3_L:           (0 0)
+                $HP_PBank3_R:           (0 0)
+                $HP_SBank1:             (47 52)
+                $HP_SBank2:             (57 52)
+                $HP_SBank3:             (64 52)
+                $HP_SBank4:             (74 52)
+                $HP_SBank5:             (0 0)
+                $HP_SBank6:             (0 0)
 #End
