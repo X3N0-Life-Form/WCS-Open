@@ -253,13 +253,13 @@ $Lock Wireframe Mode:               YES
 			Slew: 	YES
 			Active by default: 	YES
 			Filename: 	central
-		+Hardpoints:
-			Position: 					(892, 385)
-			Size: 						(150, 150)
-			Line Width: 					2
-			View Direction: 				Top
-			Show Primary Weapons: 				yes
-			Show Secondary Weapons: 			yes
+		;+Hardpoints:
+		;	Position: 					(892, 385)
+		;	Size: 						(150, 150)
+		;	Line Width: 					2
+		;	View Direction: 				Top
+		;	Show Primary Weapons: 				yes
+		;	Show Secondary Weapons: 			yes
 		
 		+Custom:
 		;    +Default1024x:              9
@@ -436,110 +436,871 @@ $Lock Wireframe Mode:               YES
 			Filename: 					secondary
 	
 	$End Gauges
-
 #End
 
-;#Main Gauges
-;    $Default:                       (1024 768)
-;        $Player Shield:             (694 670)
-;        $Target Shield:             (232 670)
-;
-;        $Afterburner Energy:        (344 643)
-;            +Image:                 2_energy2
-;            +Move in Pan View:      false
-;
-;        $Weapons Energy:            (596 643)
-;            +Image:                 2_energy2
-;            +Move in Pan View:      false
-;
-;        $Weapons Energy Text:       (650 745)
-;        $Escort List:               (865 250)
-;
-;        $Autopilot:                 (483 233)
-;            +Image:                 autopilot
-;            +Inherit Color from:    center of reticle
-;            +Move in Pan View:      true
-;
-;        $Central Reticle:           (347 219)
-;            +Image:                 central
-;            +Inherit Color from:    center of reticle
-;            +Move in Pan View:      true
-;
-;        $Hardpoints:                (892 385)
-;            +Image:                 hardpoints1
-;            +Color:                 175 230 175
-;            +Inherit Color from:    weapons display
-;            +Move in Pan View:      false
-;            +Alignment:             2                     ; 0 = Left, 1 = Center, 2 = Right
-;#End
 
 
-#Ship Main Gauges
-    $Ship:                          F-27B Arrow
-        $Default:                   (1024 768)
-            $Afterburner Energy:    (344 643)
-                +Image:             2_energy2_arrow
-                
-            $Weapons Energy:        (596 643)
-                +Image:             2_energy2_arrow
-                
-            $Central Reticle:       (347 219)
-                +Image:             central_arrow
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Ship Specific Gauges ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-    $Ship:                          F-57B Sabre
-        $Default:                   (1024 768)
-            $Afterburner Energy:    (344 643)
-                +Image:             2_energy2_sabre
-                
-            $Weapons Energy:        (596 643)
-                +Image:             2_energy2_sabre
-                
-            $Central Reticle:       (347 223)
-                +Image:             central_sabre
+#Gauge Config
+	$Ships:						( "F-27B Arrow" )
+	$Base: 						(1024, 768)
+	$Required Aspect: 			Full Screen
+	$Min: 						(1024, 768)
+	$Gauges:
+		;;;;;;;;;;;;;;;;;;;
+		;; Common gauges ;;
+		;;;;;;;;;;;;;;;;;;;
+		+Messages:
+			;Position: 										(5, 5)
+			Position: 										(5, 5)
+			Font:											0
+			Max Lines: 										5
+			Max Width: 										650
+		+Fixed Messages:
+			;Position: 										()
+		+Training Messages:
+			Position: 										(379, 125)
+		+Multiplayer Messages:
+			Position: 										(8, 240)
+		+Support:
+			;Position: 										(459, 534)
+			Position: 										(459, 214)
+		+Damage:
+			Position: 										(440, 61)
+		+Wingman Status:
+			Position: 										(932, 144)
+		+Auto Speed:
+			Position: 										(960, 672)
+		+Auto Target:
+			Position: 										(960, 648)
+		+Countermeasures:
+			Position: 										(880, 602)
+		+Talking Head:
+			Position: 										(5, 30)
+		+Directives:
+			Position: 										(5, 278)
+		+Weapons:
+			Position: 										(880, 525)
+			Font:											3
+		+Objective Notify:
+			Position: 										(436, 184)
+		+Squad Message:
+			Position: 										(827, 5)
+		+Escort View:
+			Position: 										(865, 330)
+		;+ETS Weapons:
+		;	Position: 										(880, 648)
+		;+ETS Shields:
+		;	Position: 										(898, 648)
+		;+ETS Engines:
+		;	Position: 										(916, 648)
+		+ETS Retail:
+			Position: 										(880, 648)
+		+Target Monitor:
+			Position: 										(5, 590)
+		+Extra Target Data:
+			Position: 										(5, 552)
+		+Radar:
+			Position: 										(411, 590)
+		+Text Warnings:
+			Position: 										(512, 275)
+		+Mini Target Shields:
+			Position: 										(497, 470)
+		+Throttle:
+			Position: 										(346, 269)
+			Font:											3
+		+Threat Indicator:
+			Position: 										(574, 269)
+		+Voice Status:
+			position: 										(5, 165)
+		+Ping:
+			Position: 										(896, 5)
+		+Lag:
+			;Position: 										(627, 529)
+			Position: 										(627, 5)
+		+Supernova:
+			Position: 										(170, 170)
+		+Target Brackets:
+		+Lead Indicator:
+		+Lock Indicator:
+		+Offscreen Indicator:
+		+Hostile Triangle:
+			Position: 										(512, 387)
+		+Target Triangle:
+			Position: 										(512, 387)
+		+Missile Triangles:
+			Position: 										(512, 387)
+		+Orientation Tee:
+			Position: 										(512, 387)
+		+Mission Time:
+			Position: 										(969, 716)
+		+Kills:
+			Position: 										(880, 624)
+		+Custom:		
+			Position: 	(483,233)
+			Name:	Autopilot
+			Text:	
+			Gauge Type: 	RETICLE_CIRCLE
+			Slew: 	YES
+			Active by default: 	YES
+			Filename: 	autopilot
+		;;;;;;;;;;;;;;;;;;;;;;
+		;; From Main Gauges ;;
+		;;;;;;;;;;;;;;;;;;;;;;
+		+Player Shields:
+			Position:			(694, 670)
+        +Target Shields:
+			Position:			(232, 670)
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;; From Ship Main Gauge ;;
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+		+Afterburner Energy:
+			Position:			(344, 643)
+            Filename:           2_energy2_arrow
+        +Weapon Energy:
+			Position:			(596, 643)
+            Filename:           2_energy2_arrow
+        +Center Reticle:
+			Position:			(347, 219)
+            Filename:           central_arrow
+		;;;;;;;;;;;;;;;;;;;;;;
+		;; From Ship Gauges ;;
+		;;;;;;;;;;;;;;;;;;;;;;
+		+Custom:
+			Position: 					(892, 385)
+			Name:                       HP_Silhouette
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					hp_sil_arrow
+		+Custom:
+			;$HP_PBank1_L:               (50 18)
+			Position: 					(942, 403)
+			Name:                       HP_PBank1_L
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+		+Custom:
+			;$HP_PBank1_R:           (68 18)
+			Position: 					(960, 403)
+			Name:                       HP_PBank1_R
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+		+Custom:
+			;$HP_PBank2_L:          	(40 32)
+			Position: 					(932, 417)
+			Name:                       HP_PBank2_L
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+		+Custom:
+			;$HP_PBank2_R:           	(78 32)
+			Position: 					(970, 417)
+			Name:                       HP_PBank2_R
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+		+Custom:
+			;$HP_PBank3_L:          	(0 0)
+			Position: 					(928, 415)
+			Name:                       HP_PBank3_L
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+		+Custom:
+			;$HP_PBank3_R:		        (0 0)
+			Position: 					(974, 415)
+			Name:                       HP_PBank3_R
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					primary
+		+Custom:
+			;$HP_SBank1:             	(22 47)
+			Position: 					(914, 422)
+			Name:                       HP_SBank1
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+		+Custom:
+			;$HP_SBank2:             	(28 47)
+			Position: 					(920, 422)
+			Name:                       HP_SBank2
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+		+Custom:
+			;$HP_SBank3:             	(93 47)
+			Position: 					(985, 422)
+			Name:                       HP_SBank3
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+		+Custom:
+			;$HP_SBank4:             	(99 47)
+			Position: 					(991, 422)
+			Name:                       HP_SBank4
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+		+Custom:
+			;$HP_SBank5:                 (0 0)
+			Position: 					(900, 430)
+			Name:                       HP_SBank5
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+		+Custom:
+			;$HP_SBank6:                 (0 0)
+			Position: 					(1005, 430)
+			Name:                       HP_SBank6
+			Text:
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					secondary
+	$End Gauges
+#End
 
-    $Ship:                          F-66A Thunderbolt VII
-        $Default:                   (1024 768)
-            $Afterburner Energy:    (344 643)
-                +Image:             2_energy2_thunderbolt
-                
-            $Weapons Energy:        (596 643)
-                +Image:             2_energy2_thunderbolt
-                
-            $Central Reticle:       (279 219)
-                +Image:             central_thunderbolt
+#Gauge Config
+	$Ships:						( "F-57B Sabre" )
+	$Base: 						(1024, 768)
+	$Required Aspect: 			Full Screen
+	$Min: 						(1024, 768)
+	$Gauges:
+		;;;;;;;;;;;;;;;;;;;
+		;; Common gauges ;;
+		;;;;;;;;;;;;;;;;;;;
+		+Messages:
+			;Position: 										(5, 5)
+			Position: 										(5, 5)
+			Font:											0
+			Max Lines: 										5
+			Max Width: 										650
+		+Fixed Messages:
+			;Position: 										()
+		+Training Messages:
+			Position: 										(379, 125)
+		+Multiplayer Messages:
+			Position: 										(8, 240)
+		+Support:
+			;Position: 										(459, 534)
+			Position: 										(459, 214)
+		+Damage:
+			Position: 										(440, 61)
+		+Wingman Status:
+			Position: 										(932, 144)
+		+Auto Speed:
+			Position: 										(960, 672)
+		+Auto Target:
+			Position: 										(960, 648)
+		+Countermeasures:
+			Position: 										(880, 602)
+		+Talking Head:
+			Position: 										(5, 30)
+		+Directives:
+			Position: 										(5, 278)
+		+Weapons:
+			Position: 										(880, 525)
+			Font:											3
+		+Objective Notify:
+			Position: 										(436, 184)
+		+Squad Message:
+			Position: 										(827, 5)
+		+Escort View:
+			Position: 										(865, 330)
+		;+ETS Weapons:
+		;	Position: 										(880, 648)
+		;+ETS Shields:
+		;	Position: 										(898, 648)
+		;+ETS Engines:
+		;	Position: 										(916, 648)
+		+ETS Retail:
+			Position: 										(880, 648)
+		+Target Monitor:
+			Position: 										(5, 590)
+		+Extra Target Data:
+			Position: 										(5, 552)
+		+Radar:
+			Position: 										(411, 590)
+		+Text Warnings:
+			Position: 										(512, 275)
+		+Mini Target Shields:
+			Position: 										(497, 470)
+		+Throttle:
+			Position: 										(346, 269)
+			Font:											3
+		+Threat Indicator:
+			Position: 										(574, 269)
+		+Voice Status:
+			position: 										(5, 165)
+		+Ping:
+			Position: 										(896, 5)
+		+Lag:
+			;Position: 										(627, 529)
+			Position: 										(627, 5)
+		+Supernova:
+			Position: 										(170, 170)
+		+Target Brackets:
+		+Lead Indicator:
+		+Lock Indicator:
+		+Offscreen Indicator:
+		+Hostile Triangle:
+			Position: 										(512, 387)
+		+Target Triangle:
+			Position: 										(512, 387)
+		+Missile Triangles:
+			Position: 										(512, 387)
+		+Orientation Tee:
+			Position: 										(512, 387)
+		+Mission Time:
+			Position: 										(969, 716)
+		+Kills:
+			Position: 										(880, 624)
+		+Custom:		
+			Position: 	(483,233)
+			Name:	Autopilot
+			Text:	
+			Gauge Type: 	RETICLE_CIRCLE
+			Slew: 	YES
+			Active by default: 	YES
+			Filename: 	autopilot
+		;;;;;;;;;;;;;;;;;;;;;;
+		;; From Main Gauges ;;
+		;;;;;;;;;;;;;;;;;;;;;;
+		+Player Shields:
+			Position:			(694, 670)
+        +Target Shields:
+			Position:			(232, 670)
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;; From Ship Main Gauge ;;
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+        +Afterburner Energy:
+			Position:			(344, 643)
+            Filename:			2_energy2_sabre    
+        +Weapon Energy:
+			Position:			(596, 643)
+            Filename:			2_energy2_sabre
+        +Center Reticle:
+			Position:			(347, 223)
+            Filename:			central_sabre
+	$End Gauges
+#End
 
-    $Ship:                          F/A-76A Longbow
-        $Default:                   (1024 768)
-            $Afterburner Energy:    (344 643)
-                +Image:             2_energy2_longbow
-                
-            $Weapons Energy:        (596 643)
-                +Image:             2_energy2_longbow
-                
-            $Central Reticle:       (346 219)
-                +Image:             central_longbow
 
-    $Ship:                          F-86C Hellcat V
-        $Default:                   (1024 768)
-            $Afterburner Energy:    (344 643)
-                +Image:             2_energy2_hellcat
-                
-            $Weapons Energy:        (596 643)
-                +Image:             2_energy2_hellcat
-                
-            $Central Reticle:       (347 219)
-                +Image:             central_hellcat
+#Gauge Config
+	$Ships:						( "F-66A Thunderbolt VII" )
+	$Base: 						(1024, 768)
+	$Required Aspect: 			Full Screen
+	$Min: 						(1024, 768)
+	$Gauges:
+		;;;;;;;;;;;;;;;;;;;
+		;; Common gauges ;;
+		;;;;;;;;;;;;;;;;;;;
+		+Messages:
+			;Position: 										(5, 5)
+			Position: 										(5, 5)
+			Font:											0
+			Max Lines: 										5
+			Max Width: 										650
+		+Fixed Messages:
+			;Position: 										()
+		+Training Messages:
+			Position: 										(379, 125)
+		+Multiplayer Messages:
+			Position: 										(8, 240)
+		+Support:
+			;Position: 										(459, 534)
+			Position: 										(459, 214)
+		+Damage:
+			Position: 										(440, 61)
+		+Wingman Status:
+			Position: 										(932, 144)
+		+Auto Speed:
+			Position: 										(960, 672)
+		+Auto Target:
+			Position: 										(960, 648)
+		+Countermeasures:
+			Position: 										(880, 602)
+		+Talking Head:
+			Position: 										(5, 30)
+		+Directives:
+			Position: 										(5, 278)
+		+Weapons:
+			Position: 										(880, 525)
+			Font:											3
+		+Objective Notify:
+			Position: 										(436, 184)
+		+Squad Message:
+			Position: 										(827, 5)
+		+Escort View:
+			Position: 										(865, 330)
+		;+ETS Weapons:
+		;	Position: 										(880, 648)
+		;+ETS Shields:
+		;	Position: 										(898, 648)
+		;+ETS Engines:
+		;	Position: 										(916, 648)
+		+ETS Retail:
+			Position: 										(880, 648)
+		+Target Monitor:
+			Position: 										(5, 590)
+		+Extra Target Data:
+			Position: 										(5, 552)
+		+Radar:
+			Position: 										(411, 590)
+		+Text Warnings:
+			Position: 										(512, 275)
+		+Mini Target Shields:
+			Position: 										(497, 470)
+		+Throttle:
+			Position: 										(346, 269)
+			Font:											3
+		+Threat Indicator:
+			Position: 										(574, 269)
+		+Voice Status:
+			position: 										(5, 165)
+		+Ping:
+			Position: 										(896, 5)
+		+Lag:
+			;Position: 										(627, 529)
+			Position: 										(627, 5)
+		+Supernova:
+			Position: 										(170, 170)
+		+Target Brackets:
+		+Lead Indicator:
+		+Lock Indicator:
+		+Offscreen Indicator:
+		+Hostile Triangle:
+			Position: 										(512, 387)
+		+Target Triangle:
+			Position: 										(512, 387)
+		+Missile Triangles:
+			Position: 										(512, 387)
+		+Orientation Tee:
+			Position: 										(512, 387)
+		+Mission Time:
+			Position: 										(969, 716)
+		+Kills:
+			Position: 										(880, 624)
+		+Custom:		
+			Position: 	(483,233)
+			Name:	Autopilot
+			Text:	
+			Gauge Type: 	RETICLE_CIRCLE
+			Slew: 	YES
+			Active by default: 	YES
+			Filename: 	autopilot
+		;;;;;;;;;;;;;;;;;;;;;;
+		;; From Main Gauges ;;
+		;;;;;;;;;;;;;;;;;;;;;;
+		+Player Shields:
+			Position:			(694, 670)
+        +Target Shields:
+			Position:			(232, 670)
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;; From Ship Main Gauge ;;
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+        +Afterburner Energy:
+			Position			(344, 643)
+            Filename:			2_energy2_thunderbolt
+		+Weapon Energy:
+			Position:			(596, 643)
+            Filename:			2_energy2_thunderbolt
+        +Center Reticle:
+			Position:			(279, 219)
+            Filename:			central_thunderbolt
+	$End Gauges
+#End
 
-    $Ship:                          F-103A Excalibur
-        $Default:                   (1024 768)
-            $Afterburner Energy:    (344 643)
-                +Image:             2_energy2_excalibur
-                
-            $Weapons Energy:        (596 643)
-                +Image:             2_energy2_excalibur
-                
-            $Central Reticle:       (347 207)
-                +Image:             central_excalibur
+#Gauge Config
+	$Ships:						( "F/A-76A Longbow" )
+	$Base: 						(1024, 768)
+	$Required Aspect: 			Full Screen
+	$Min: 						(1024, 768)
+	$Gauges:
+		;;;;;;;;;;;;;;;;;;;
+		;; Common gauges ;;
+		;;;;;;;;;;;;;;;;;;;
+		+Messages:
+			;Position: 										(5, 5)
+			Position: 										(5, 5)
+			Font:											0
+			Max Lines: 										5
+			Max Width: 										650
+		+Fixed Messages:
+			;Position: 										()
+		+Training Messages:
+			Position: 										(379, 125)
+		+Multiplayer Messages:
+			Position: 										(8, 240)
+		+Support:
+			;Position: 										(459, 534)
+			Position: 										(459, 214)
+		+Damage:
+			Position: 										(440, 61)
+		+Wingman Status:
+			Position: 										(932, 144)
+		+Auto Speed:
+			Position: 										(960, 672)
+		+Auto Target:
+			Position: 										(960, 648)
+		+Countermeasures:
+			Position: 										(880, 602)
+		+Talking Head:
+			Position: 										(5, 30)
+		+Directives:
+			Position: 										(5, 278)
+		+Weapons:
+			Position: 										(880, 525)
+			Font:											3
+		+Objective Notify:
+			Position: 										(436, 184)
+		+Squad Message:
+			Position: 										(827, 5)
+		+Escort View:
+			Position: 										(865, 330)
+		;+ETS Weapons:
+		;	Position: 										(880, 648)
+		;+ETS Shields:
+		;	Position: 										(898, 648)
+		;+ETS Engines:
+		;	Position: 										(916, 648)
+		+ETS Retail:
+			Position: 										(880, 648)
+		+Target Monitor:
+			Position: 										(5, 590)
+		+Extra Target Data:
+			Position: 										(5, 552)
+		+Radar:
+			Position: 										(411, 590)
+		+Text Warnings:
+			Position: 										(512, 275)
+		+Mini Target Shields:
+			Position: 										(497, 470)
+		+Throttle:
+			Position: 										(346, 269)
+			Font:											3
+		+Threat Indicator:
+			Position: 										(574, 269)
+		+Voice Status:
+			position: 										(5, 165)
+		+Ping:
+			Position: 										(896, 5)
+		+Lag:
+			;Position: 										(627, 529)
+			Position: 										(627, 5)
+		+Supernova:
+			Position: 										(170, 170)
+		+Target Brackets:
+		+Lead Indicator:
+		+Lock Indicator:
+		+Offscreen Indicator:
+		+Hostile Triangle:
+			Position: 										(512, 387)
+		+Target Triangle:
+			Position: 										(512, 387)
+		+Missile Triangles:
+			Position: 										(512, 387)
+		+Orientation Tee:
+			Position: 										(512, 387)
+		+Mission Time:
+			Position: 										(969, 716)
+		+Kills:
+			Position: 										(880, 624)
+		+Custom:		
+			Position: 	(483,233)
+			Name:	Autopilot
+			Text:	
+			Gauge Type: 	RETICLE_CIRCLE
+			Slew: 	YES
+			Active by default: 	YES
+			Filename: 	autopilot
+		;;;;;;;;;;;;;;;;;;;;;;
+		;; From Main Gauges ;;
+		;;;;;;;;;;;;;;;;;;;;;;
+		+Player Shields:
+			Position:			(694, 670)
+        +Target Shields:
+			Position:			(232, 670)
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;; From Ship Main Gauge ;;
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+		+Afterburner Energy:
+			Position:			(344, 643)
+            Filename:			2_energy2_longbow
+        +Weapon Energy:
+			Position:			(596, 643)
+            Filename:			2_energy2_longbow
+        +Center Reticle:
+			Position:			(346, 219)
+            Filename:			central_longbow
+	$End Gauges
+#End
+
+
+#Gauge Config
+	$Ships:						( "F-86C Hellcat V" )
+	$Base: 						(1024, 768)
+	$Required Aspect: 			Full Screen
+	$Min: 						(1024, 768)
+	$Gauges:
+		;;;;;;;;;;;;;;;;;;;
+		;; Common gauges ;;
+		;;;;;;;;;;;;;;;;;;;
+		+Messages:
+			;Position: 										(5, 5)
+			Position: 										(5, 5)
+			Font:											0
+			Max Lines: 										5
+			Max Width: 										650
+		+Fixed Messages:
+			;Position: 										()
+		+Training Messages:
+			Position: 										(379, 125)
+		+Multiplayer Messages:
+			Position: 										(8, 240)
+		+Support:
+			;Position: 										(459, 534)
+			Position: 										(459, 214)
+		+Damage:
+			Position: 										(440, 61)
+		+Wingman Status:
+			Position: 										(932, 144)
+		+Auto Speed:
+			Position: 										(960, 672)
+		+Auto Target:
+			Position: 										(960, 648)
+		+Countermeasures:
+			Position: 										(880, 602)
+		+Talking Head:
+			Position: 										(5, 30)
+		+Directives:
+			Position: 										(5, 278)
+		+Weapons:
+			Position: 										(880, 525)
+			Font:											3
+		+Objective Notify:
+			Position: 										(436, 184)
+		+Squad Message:
+			Position: 										(827, 5)
+		+Escort View:
+			Position: 										(865, 330)
+		;+ETS Weapons:
+		;	Position: 										(880, 648)
+		;+ETS Shields:
+		;	Position: 										(898, 648)
+		;+ETS Engines:
+		;	Position: 										(916, 648)
+		+ETS Retail:
+			Position: 										(880, 648)
+		+Target Monitor:
+			Position: 										(5, 590)
+		+Extra Target Data:
+			Position: 										(5, 552)
+		+Radar:
+			Position: 										(411, 590)
+		+Text Warnings:
+			Position: 										(512, 275)
+		+Mini Target Shields:
+			Position: 										(497, 470)
+		+Throttle:
+			Position: 										(346, 269)
+			Font:											3
+		+Threat Indicator:
+			Position: 										(574, 269)
+		+Voice Status:
+			position: 										(5, 165)
+		+Ping:
+			Position: 										(896, 5)
+		+Lag:
+			;Position: 										(627, 529)
+			Position: 										(627, 5)
+		+Supernova:
+			Position: 										(170, 170)
+		+Target Brackets:
+		+Lead Indicator:
+		+Lock Indicator:
+		+Offscreen Indicator:
+		+Hostile Triangle:
+			Position: 										(512, 387)
+		+Target Triangle:
+			Position: 										(512, 387)
+		+Missile Triangles:
+			Position: 										(512, 387)
+		+Orientation Tee:
+			Position: 										(512, 387)
+		+Mission Time:
+			Position: 										(969, 716)
+		+Kills:
+			Position: 										(880, 624)
+		+Custom:		
+			Position: 	(483,233)
+			Name:	Autopilot
+			Text:	
+			Gauge Type: 	RETICLE_CIRCLE
+			Slew: 	YES
+			Active by default: 	YES
+			Filename: 	autopilot
+		;;;;;;;;;;;;;;;;;;;;;;
+		;; From Main Gauges ;;
+		;;;;;;;;;;;;;;;;;;;;;;
+		+Player Shields:
+			Position:			(694, 670)
+        +Target Shields:
+			Position:			(232, 670)
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;; From Ship Main Gauge ;;
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+        +Afterburner Energy:
+			Position:			(344, 643)
+            Filename:			2_energy2_hellcat
+        +Weapon Energy:
+			Position:			(596, 643)
+            Filename:			2_energy2_hellcat
+        +Center Reticle:
+			Position:			(347, 219)
+            Filename:			central_hellcat
+	$End Gauges
+#End
+
+                       
+#Gauge Config
+	$Ships:						( "F-103A Excalibur" )
+	$Base: 						(1024, 768)
+	$Required Aspect: 			Full Screen
+	$Min: 						(1024, 768)
+	$Gauges:
+		;;;;;;;;;;;;;;;;;;;
+		;; Common gauges ;;
+		;;;;;;;;;;;;;;;;;;;
+		+Messages:
+			;Position: 										(5, 5)
+			Position: 										(5, 5)
+			Font:											0
+			Max Lines: 										5
+			Max Width: 										650
+		+Fixed Messages:
+			;Position: 										()
+		+Training Messages:
+			Position: 										(379, 125)
+		+Multiplayer Messages:
+			Position: 										(8, 240)
+		+Support:
+			;Position: 										(459, 534)
+			Position: 										(459, 214)
+		+Damage:
+			Position: 										(440, 61)
+		+Wingman Status:
+			Position: 										(932, 144)
+		+Auto Speed:
+			Position: 										(960, 672)
+		+Auto Target:
+			Position: 										(960, 648)
+		+Countermeasures:
+			Position: 										(880, 602)
+		+Talking Head:
+			Position: 										(5, 30)
+		+Directives:
+			Position: 										(5, 278)
+		+Weapons:
+			Position: 										(880, 525)
+			Font:											3
+		+Objective Notify:
+			Position: 										(436, 184)
+		+Squad Message:
+			Position: 										(827, 5)
+		+Escort View:
+			Position: 										(865, 330)
+		;+ETS Weapons:
+		;	Position: 										(880, 648)
+		;+ETS Shields:
+		;	Position: 										(898, 648)
+		;+ETS Engines:
+		;	Position: 										(916, 648)
+		+ETS Retail:
+			Position: 										(880, 648)
+		+Target Monitor:
+			Position: 										(5, 590)
+		+Extra Target Data:
+			Position: 										(5, 552)
+		+Radar:
+			Position: 										(411, 590)
+		+Text Warnings:
+			Position: 										(512, 275)
+		+Mini Target Shields:
+			Position: 										(497, 470)
+		+Throttle:
+			Position: 										(346, 269)
+			Font:											3
+		+Threat Indicator:
+			Position: 										(574, 269)
+		+Voice Status:
+			position: 										(5, 165)
+		+Ping:
+			Position: 										(896, 5)
+		+Lag:
+			;Position: 										(627, 529)
+			Position: 										(627, 5)
+		+Supernova:
+			Position: 										(170, 170)
+		+Target Brackets:
+		+Lead Indicator:
+		+Lock Indicator:
+		+Offscreen Indicator:
+		+Hostile Triangle:
+			Position: 										(512, 387)
+		+Target Triangle:
+			Position: 										(512, 387)
+		+Missile Triangles:
+			Position: 										(512, 387)
+		+Orientation Tee:
+			Position: 										(512, 387)
+		+Mission Time:
+			Position: 										(969, 716)
+		+Kills:
+			Position: 										(880, 624)
+		+Custom:		
+			Position: 	(483,233)
+			Name:	Autopilot
+			Text:	
+			Gauge Type: 	RETICLE_CIRCLE
+			Slew: 	YES
+			Active by default: 	YES
+			Filename: 	autopilot
+		;;;;;;;;;;;;;;;;;;;;;;
+		;; From Main Gauges ;;
+		;;;;;;;;;;;;;;;;;;;;;;
+		+Player Shields:
+			Position:			(694, 670)
+        +Target Shields:
+			Position:			(232, 670)
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;; From Ship Main Gauge ;;
+		;;;;;;;;;;;;;;;;;;;;;;;;;;
+        +Afterburner Energy:
+			Position:			(344, 643)
+            Filename:			2_energy2_excalibur
+        +Weapon Energy:
+			Position:			(596, 643)
+            Filename:			2_energy2_excalibur
+        +Center Reticle:
+			Position:			(347, 207)
+            Filename:			central_excalibur
+	$End Gauges
 #End
 
 
