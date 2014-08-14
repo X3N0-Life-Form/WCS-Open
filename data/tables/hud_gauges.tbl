@@ -4,140 +4,141 @@ $Max directives:	15
 $Max escort ships:	15
 $Length Unit Multiplier:            6.33333
 $Lock Wireframe Mode:               YES
+$Scale Gauges:						NO
 ;$Highlight Tagged Ships:            NO		
 				
-#Gauge Config				
-	$Base:	(1440,900)
-	$Required Aspect: 	Wide Screen
-	$Min:	(1280,720)				
-	$Gauges:			
-		+Messages:		
-			Position:	(5,5)
-			Font:	0
-			Max Lines:	5
-			Max Width:	914
-		+Fixed Messages:		
-		+Training Messages:		
-			Position:	(587,191)
-		+Multiplayer Messages:		
-			Position:	(216,306)
-		+Support:		
-			Position:	(667,346)
-		+Damage:		
-			Position:	(648,127)
-		+Wingman Status:		
-			Position:	(1348,210)
-		+Auto Speed:		
-			Position:	(1376,804)
-		+Auto Target:		
-			Position:	(1376,780)
-		+Countermeasures:		
-			Position:	(1296,734)
-		+Talking Head:		
-			Position:	(5,30)
-		+Directives:		
-			Position:	(5,344)
-		+Weapons:		
-			Position:	(1296,637)
-			Font:	3
-		+Objective Notify:		
-			Position:	(644,292)
-		+Squad Message:		
-			Position:	(1243,5)
-		+Escort View:		
-			Position:	(1281,462)
-		;+ETS Weapons:		
-		;	Position:	(1296,780)
+;#Gauge Config				
+;	$Base:	(1440,900)
+;	$Required Aspect: 	Wide Screen
+;	$Min:	(1280,720)				
+;	$Gauges:			
+;		+Messages:		
+;			Position:	(5,5)
+;			Font:	0
+;			Max Lines:	5
+;			Max Width:	914
+;		+Fixed Messages:		
+;		+Training Messages:		
+;;			Position:	(587,191)
+	;	+Multiplayer Messages:		
+	;		Position:	(216,306)
+	;	+Support:		
+		;	Position:	(667,346)
+	;	+Damage:		
+	;		Position:	(648,127)
+	;;	+Wingman Status:		
+		;	Position:	(1348,210)
+	;	+Auto Speed:		
+	;		Position:	(1376,804)
+	;	+Auto Target:		
+	;		Position:	(1376,780)
+	;	+Countermeasures:		
+	;		Position:	(1296,734)
+	;;	+Talking Head:		
+		;	Position:	(5,30)
+	;	+Directives:		
+	;		Position:	(5,344)
+	;	+Weapons:		
+	;		Position:	(1296,637)
+	;		Font:	3
+	;;	+Objective Notify:		
+	;		Position:	(644,292)
+	;	+Squad Message:		
+	;		Position:	(1243,5)
+	;	+Escort View:		
+	;		Position:	(1281,462)
+	;	;+ETS Weapons:		
+	;	;	Position:	(1296,780)
 		;+ETS Shields:		
 		;	Position:	(1314,780)
 		;+ETS Engines:		
 		;	Position:	(1332,780)
-		+ETS Retail:		
-			Position:	(1296,780)
-		+Target Monitor:		
-			Position:	(5,722)
-		+Extra Target Data:		
-			Position:	(5,684)
-		+Target Shields:		
-			Position:	(458,802)
-		+Radar:		
-			Position:	(619,722)
-		+Player Shields:		
-			Position:	(884,802)
-		+Afterburner Energy:		
-			Position:	(482,490)
-		+Weapon Energy:		
-			Position:	(874,490)
-		+Text Warnings:		
-			Position:	(720,341)
-		+Center Reticle:		
-			Position:	(701,436)
-			Firepoint display:	YES
-		+Mini Target Shields:		
-			Position:	(705,536)
-		+Throttle:		
-			Position:	(554,335)
-			Font:	3
-		+Threat Indicator:		
-			Position:	(782,335)
-		+Voice Status:		
-			Position:	(5,231)
-		+Ping:		
-			Position:	(1104,5)
-		+Lag:		
-			Position:	(835,5)
-		+Supernova:		
-			Position:	(170,170)
-		+Hostile Triangle:		
-			Position:	(720,450)
-		+Target Triangle:		
-			Position:	(720,450)
-		+Missile Triangles:		
-			Position:	(720,450)
-		+Orientation Tee:		
-			Position:	(720,450)
-		+Target Brackets:		
-		+Lead Indicator:		
-		+Lock Indicator:		
-		+Offscreen Indicator:		
-			Position:	(720,450)
-		+Mission Time:		
-			Position:	(1385,848)
-		+Kills:		
-			Position:	(1296,756)
-			
-		;;WCS Custom Gauges
-		+Custom:		
-			Position: 	(691,265)
-			Name:	Autopilot
-			Text:	
-			Gauge Type: 	RETICLE_CIRCLE
-			Slew: 	YES
-			Active by default: 	YES
-			Filename: 	autopilot
-		+Custom:		
-			Position: 	(555,285)
-			Name:	Central Reticle
-			Text:	
-			Gauge Type: 	RETICLE_CIRCLE
-			Slew: 	YES
-			Active by default: 	YES
-			Filename: 	central
-		+Hardpoints:
-			Position: 					(1280, 460)
-			Size: 						(150, 150)
-			Line Width: 					2
-			View Direction: 				Top
-			Show Primary Weapons: 				yes
-			Show Secondary Weapons: 			yes
-	$End Gauges		
+	;	+ETS Retail:		
+	;		Position:	(1296,780)
+	;	+Target Monitor:		
+	;		Position:	(5,722)
+	;	+Extra Target Data:		
+	;		Position:	(5,684)
+	;	+Target Shields:		
+	;		Position:	(458,802)
+	;	+Radar:		
+	;		Position:	(619,722)
+	;	+Player Shields:		
+	;		Position:	(884,802)
+	;	+Afterburner Energy:		
+	;		Position:	(482,490)
+	;	+Weapon Energy:		
+	;		Position:	(874,490)
+	;	+Text Warnings:		
+	;		Position:	(720,341)
+	;	+Center Reticle:		
+	;		Position:	(701,436)
+	;		Firepoint display:	YES
+	;	+Mini Target Shields:		
+	;		Position:	(705,536)
+	;	+Throttle:		
+	;		Position:	(554,335)
+	;		Font:	3
+	;	+Threat Indicator:		
+	;		Position:	(782,335)
+	;	+Voice Status:		
+	;		Position:	(5,231)
+	;	+Ping:		
+	;		Position:	(1104,5)
+	;	+Lag:		
+	;		Position:	(835,5)
+	;	+Supernova:		
+	;		Position:	(170,170)
+	;	+Hostile Triangle:		
+	;		Position:	(720,450)
+	;	+Target Triangle:		
+	;		Position:	(720,450)
+	;	+Missile Triangles:		
+	;		Position:	(720,450)
+	;	+Orientation Tee:		
+	;		Position:	(720,450)
+	;	+Target Brackets:		
+	;	+Lead Indicator:		
+	;	+Lock Indicator:		
+	;	+Offscreen Indicator:		
+	;		Position:	(720,450)
+	;	+Mission Time:		
+	;		Position:	(1385,848)
+	;	+Kills:		
+	;		Position:	(1296,756)
+	;		
+	;	;;WCS Custom Gauges
+	;	+Custom:		
+	;		Position: 	(691,265)
+	;		Name:	Autopilot
+	;		Text:	
+	;		Gauge Type: 	RETICLE_CIRCLE
+	;		Slew: 	YES
+			; Active by default: 	YES
+			; Filename: 	autopilot
+		; +Custom:		
+			; Position: 	(555,285)
+			; Name:	Central Reticle
+			; Text:	
+			; Gauge Type: 	RETICLE_CIRCLE
+			; Slew: 	YES
+			; Active by default: 	YES
+			; Filename: 	central
+		; +Hardpoints:
+			; Position: 					(1280, 460)
+			; Size: 						(150, 150)
+			; Line Width: 					2
+			; View Direction: 				Top
+			; Show Primary Weapons: 				yes
+			; Show Secondary Weapons: 			yes
+	; $End Gauges		
 
-#End
+;#End
 
 
 #Gauge Config
 	$Base: 													(1024, 768)
-	$Required Aspect: 										Full Screen
+	;$Required Aspect: 										Full Screen
 	$Min: 													(1024, 768)
 	$Gauges:
 		+Messages:
@@ -271,9 +272,10 @@ $Lock Wireframe Mode:               YES
 			Position:					(901, 387)
 			Name:						HP_Text
 			Text:						Hardpoints
+			X Offset:					10
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
-			Filename: 					2_reticle1 ; ???
+			Filename: 					hardpoints1
    
         
 		+Custom:
@@ -447,7 +449,7 @@ $Lock Wireframe Mode:               YES
 #Gauge Config
 	$Ships:						( "F-27B Arrow" )
 	$Base: 						(1024, 768)
-	$Required Aspect: 			Full Screen
+	;$Required Aspect: 			Full Screen
 	$Min: 						(1024, 768)
 	$Gauges:
 		;;;;;;;;;;;;;;;;;;;
@@ -550,6 +552,14 @@ $Lock Wireframe Mode:               YES
 		;;;;;;;;;;;;;;;;;;;;;;
 		;; From Main Gauges ;;
 		;;;;;;;;;;;;;;;;;;;;;;
+		+Custom:
+			Position:					(892, 385)
+			Name:						HP_Text
+			Text:						Hardpoints
+			X Offset:					10
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					hardpoints1
 		+Player Shields:
 			Position:			(694, 670)
         +Target Shields:
@@ -781,6 +791,14 @@ $Lock Wireframe Mode:               YES
 		;;;;;;;;;;;;;;;;;;;;;;
 		;; From Main Gauges ;;
 		;;;;;;;;;;;;;;;;;;;;;;
+		+Custom:
+			Position:					(892, 385)
+			Name:						HP_Text
+			Text:						Hardpoints
+			X Offset:					10
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					hardpoints1
 		+Player Shields:
 			Position:			(694, 670)
         +Target Shields:
@@ -1013,6 +1031,14 @@ $Lock Wireframe Mode:               YES
 		;;;;;;;;;;;;;;;;;;;;;;
 		;; From Main Gauges ;;
 		;;;;;;;;;;;;;;;;;;;;;;
+		+Custom:
+			Position:					(892, 385)
+			Name:						HP_Text
+			Text:						Hardpoints
+			X Offset:					10
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					hardpoints1
 		+Player Shields:
 			Position:			(694, 670)
         +Target Shields:
@@ -1032,160 +1058,100 @@ $Lock Wireframe Mode:               YES
 		;;;;;;;;;;;;;;;;;;;;;;
 		;; From Ship Gauges ;;
 		;;;;;;;;;;;;;;;;;;;;;;
-		
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_Silhouette:             (0 0)
-		;		+Inherit Color from:    weapons display
 			Position: 					(892, 385)
 			Name:                       HP_Silhouette
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
-			Filename: 					hp_sil_generic
-		
-        
-		
+			Filename: 					hp_sil_thunderbolt
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank1_L:               (54 14)
-			Position: 					(946, 399)
+			;$HP_PBank1_L:           (49 20)
+			Position: 					(941, 405)
 			Name:                       HP_PBank1_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank1_R:               (64 14)
-			Position: 					(956, 399)
+			;$HP_PBank1_R:           (69 20)
+			Position: 					(961, 405)
 			Name:                       HP_PBank1_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank2_L:               (45 22)
-			Position: 					(937, 407)
+			;$HP_PBank2_L:           (39 33)
+			Position: 					(931, 418)
 			Name:                       HP_PBank2_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	HP_PBank2_R:               (73 22)
-			Position: 					(965, 407)
+			;$HP_PBank2_R:           (79 33)
+			Position: 					(971, 418)
 			Name:                       HP_PBank2_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank3_L:               (36 30)
-			Position: 					(928, 415)
+			;$HP_PBank3_L:           (29 41)
+			Position: 					(921, 426)
 			Name:                       HP_PBank3_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank3_R:               (82 30)
-			Position: 					(974, 415)
+			;$HP_PBank3_R:           (89 41)
+			Position: 					(981, 426)
 			Name:                       HP_PBank3_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank1:                 (28 55)
-			Position: 					(920, 430)
+			;$HP_SBank1:             (19 64)
+			Position: 					(911, 439)
 			Name:                       HP_SBank1
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank2:                 (93 55)
-			Position: 					(995, 430)
+			;$HP_SBank2:             (60 40)
+			Position: 					(951, 430)
 			Name:                       HP_SBank2
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank3:                 (18 55)
-			Position: 					(910, 430)
+			;$HP_SBank3:             (102 64)
+			Position: 					(994, 439)
 			Name:                       HP_SBank3
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		  
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank4:                 (103 55)
 			Position: 					(995, 430)
 			Name:                       HP_SBank4
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank5:                 (8 55)
 			Position: 					(900, 430)
 			Name:                       HP_SBank5
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank6:                 (113 55)
 			Position: 					(1005, 430)
 			Name:                       HP_SBank6
 			Text:
@@ -1301,6 +1267,14 @@ $Lock Wireframe Mode:               YES
 		;;;;;;;;;;;;;;;;;;;;;;
 		;; From Main Gauges ;;
 		;;;;;;;;;;;;;;;;;;;;;;
+		+Custom:
+			Position:					(892, 385)
+			Name:						HP_Text
+			Text:						Hardpoints
+			X Offset:					10
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					hardpoints1
 		+Player Shields:
 			Position:			(694, 670)
         +Target Shields:
@@ -1320,160 +1294,102 @@ $Lock Wireframe Mode:               YES
 		;;;;;;;;;;;;;;;;;;;;;;
 		;; From Ship Gauges ;;
 		;;;;;;;;;;;;;;;;;;;;;;
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_Silhouette:             (0 0)
-		;		+Inherit Color from:    weapons display
 			Position: 					(892, 385)
 			Name:                       HP_Silhouette
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
-			Filename: 					hp_sil_generic
-		
-        
-		
+			Filename: 					hp_sil_longbow
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank1_L:               (54 14)
-			Position: 					(946, 399)
+			;$HP_PBank1_L:           (53 16)
+			Position: 					(945, 401)
 			Name:                       HP_PBank1_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank1_R:               (64 14)
-			Position: 					(956, 399)
+			;$HP_PBank1_R:           (65 16)
+			Position: 					(957, 401)
 			Name:                       HP_PBank1_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank2_L:               (45 22)
-			Position: 					(937, 407)
+			;$HP_PBank2_L:           (54 45)
+			Position: 					(946, 430)
 			Name:                       HP_PBank2_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	HP_PBank2_R:               (73 22)
-			Position: 					(965, 407)
+			;$HP_PBank2_R:           (64 45)
+			Position: 					(956, 430)
 			Name:                       HP_PBank2_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank3_L:               (36 30)
 			Position: 					(928, 415)
 			Name:                       HP_PBank3_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank3_R:               (82 30)
 			Position: 					(974, 415)
 			Name:                       HP_PBank3_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank1:                 (28 55)
-			Position: 					(920, 430)
+			;$HP_SBank1:             (15 58)
+			Position: 					(907, 433)
 			Name:                       HP_SBank1
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank2:                 (93 55)
-			Position: 					(995, 430)
+			;$HP_SBank2:             (23 51)
+			Position: 					(925, 426)
 			Name:                       HP_SBank2
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank3:                 (18 55)
-			Position: 					(910, 430)
+			;$HP_SBank3:             (45 44)
+			Position: 					(937, 419)
 			Name:                       HP_SBank3
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		  
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank4:                 (103 55)
-			Position: 					(995, 430)
+			;$HP_SBank4:             (76 44)
+			Position: 					(968, 419)
 			Name:                       HP_SBank4
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank5:                 (8 55)
-			Position: 					(900, 430)
+			;$HP_SBank5:             (98 51)
+			Position: 					(990, 426)
 			Name:                       HP_SBank5
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank6:                 (113 55)
-			Position: 					(1005, 430)
+			;$HP_SBank6:             (106 58)
+			Position: 					(998, 433)
 			Name:                       HP_SBank6
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
@@ -1589,6 +1505,14 @@ $Lock Wireframe Mode:               YES
 		;;;;;;;;;;;;;;;;;;;;;;
 		;; From Main Gauges ;;
 		;;;;;;;;;;;;;;;;;;;;;;
+		+Custom:
+			Position:					(892, 385)
+			Name:						HP_Text
+			Text:						Hardpoints
+			X Offset:					10
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					hardpoints1
 		+Player Shields:
 			Position:			(694, 670)
         +Target Shields:
@@ -1608,159 +1532,97 @@ $Lock Wireframe Mode:               YES
 		;;;;;;;;;;;;;;;;;;;;;;
 		;; From Ship Gauges ;;
 		;;;;;;;;;;;;;;;;;;;;;;
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_Silhouette:             (0 0)
-		;		+Inherit Color from:    weapons display
 			Position: 					(892, 385)
 			Name:                       HP_Silhouette
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
-			Filename: 					hp_sil_generic
-		
-        
-		
+			Filename: 					hp_sil_hellcat
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank1_L:               (54 14)
-			Position: 					(946, 399)
+			;$HP_PBank1_L:           (53 25)
+			Position: 					(945, 410)
 			Name:                       HP_PBank1_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank1_R:               (64 14)
-			Position: 					(956, 399)
+			;$HP_PBank1_R:           (65 25)
+			Position: 					(957, 410)
 			Name:                       HP_PBank1_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank2_L:               (45 22)
-			Position: 					(937, 407)
+			;$HP_PBank2_L:           (42 25)
+			Position: 					(934, 410)
 			Name:                       HP_PBank2_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	HP_PBank2_R:               (73 22)
-			Position: 					(965, 407)
+			;$HP_PBank2_R:           (76 25)
+			Position: 					(968, 410)
 			Name:                       HP_PBank2_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank3_L:               (36 30)
 			Position: 					(928, 415)
 			Name:                       HP_PBank3_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank3_R:               (82 30)
 			Position: 					(974, 415)
 			Name:                       HP_PBank3_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank1:                 (28 55)
-			Position: 					(920, 430)
+			;$HP_SBank1:             (25 50)
+			Position: 					(917, 425)
 			Name:                       HP_SBank1
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank2:                 (93 55)
-			Position: 					(995, 430)
+			;$HP_SBank2:             (96 50)
+			Position: 					(989, 425)
 			Name:                       HP_SBank2
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank3:                 (18 55)
 			Position: 					(910, 430)
 			Name:                       HP_SBank3
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		  
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank4:                 (103 55)
 			Position: 					(995, 430)
 			Name:                       HP_SBank4
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank5:                 (8 55)
 			Position: 					(900, 430)
 			Name:                       HP_SBank5
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank6:                 (113 55)
 			Position: 					(1005, 430)
 			Name:                       HP_SBank6
 			Text:
@@ -1877,6 +1739,14 @@ $Lock Wireframe Mode:               YES
 		;;;;;;;;;;;;;;;;;;;;;;
 		;; From Main Gauges ;;
 		;;;;;;;;;;;;;;;;;;;;;;
+		+Custom:
+			Position:					(892, 385)
+			Name:						HP_Text
+			Text:						Hardpoints
+			X Offset:					10
+			Gauge Type:					WEAPONS_GAUGE
+			Active by default: 			YES
+			Filename: 					hardpoints1
 		+Player Shields:
 			Position:			(694, 670)
         +Target Shields:
@@ -1896,159 +1766,99 @@ $Lock Wireframe Mode:               YES
 		;;;;;;;;;;;;;;;;;;;;;;
 		;; From Ship Gauges ;;
 		;;;;;;;;;;;;;;;;;;;;;;
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_Silhouette:             (0 0)
-		;		+Inherit Color from:    weapons display
 			Position: 					(892, 385)
 			Name:                       HP_Silhouette
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
-			Filename: 					hp_sil_generic
-		
-        
-		
+			Filename: 					hp_sil_excalibur
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank1_L:               (54 14)
-			Position: 					(946, 399)
+			;$HP_PBank1_L:           (26 54)
+			Position: 					(920, 439)
 			Name:                       HP_PBank1_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
-			Filename: 					primary
-		
+			Filename: 					primary_dbl_left
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank1_R:               (64 14)
-			Position: 					(956, 399)
+			;$HP_PBank1_R:           (81 54)
+			Position: 					(973, 439)
 			Name:                       HP_PBank1_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
-			Filename: 					primary
-			
+			Filename: 					primary_dbl_right
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank2_L:               (45 22)
-			Position: 					(937, 407)
+			;$HP_PBank2_L:           (53 24)
+			Position: 					(945, 409)
 			Name:                       HP_PBank2_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	HP_PBank2_R:               (73 22)
-			Position: 					(965, 407)
+			;$HP_PBank2_R:           (65 24)
+			Position: 					(957, 409)
 			Name:                       HP_PBank2_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank3_L:               (36 30)
 			Position: 					(928, 415)
 			Name:                       HP_PBank3_L
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-			
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_PBank3_R:               (82 30)
 			Position: 					(974, 415)
 			Name:                       HP_PBank3_R
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					primary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank1:                 (28 55)
-			Position: 					(920, 430)
+			;$HP_SBank1:             (47 52)
+			Position: 					(939, 435)
 			Name:                       HP_SBank1
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank2:                 (93 55)
-			Position: 					(995, 430)
+			;$HP_SBank2:             (57 52)
+			Position: 					(949, 435)
 			Name:                       HP_SBank2
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank3:                 (18 55)
-			Position: 					(910, 430)
+			;$HP_SBank3:             (64 52)
+			Position: 					(956, 435)
 			Name:                       HP_SBank3
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		  
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank4:                 (103 55)
-			Position: 					(995, 430)
+			;$HP_SBank4:             (74 52)
+			Position: 					(966, 435)
 			Name:                       HP_SBank4
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank5:                 (8 55)
 			Position: 					(900, 430)
 			Name:                       HP_SBank5
 			Text:
 			Gauge Type:					WEAPONS_GAUGE
 			Active by default: 			YES
 			Filename: 					secondary
-		
 		+Custom:
-		;    +Default1024x:              0
-		;    +Default1024y:              0
-		;    +Parent:                    Hardpoints
-		;	$HP_SBank6:                 (113 55)
 			Position: 					(1005, 430)
 			Name:                       HP_SBank6
 			Text:
@@ -2056,83 +1866,4 @@ $Lock Wireframe Mode:               YES
 			Active by default: 			YES
 			Filename: 					secondary
 	$End Gauges
-#End
-
-
-
-#Ship Gauges
-
-    $Ship:                              F-66A Thunderbolt VII
-        $Default:                       (1024 768)
-            $Gauge:                     Hardpoints
-                $HP_Silhouette:         (0 0)
-                    +Image:             hp_sil_thunderbolt
-                $HP_PBank1_L:           (49 20)
-                $HP_PBank1_R:           (69 20)
-                $HP_PBank2_L:           (39 33)
-                $HP_PBank2_R:           (79 33)
-                $HP_PBank3_L:           (29 41)
-                $HP_PBank3_R:           (89 41)
-                $HP_SBank1:             (19 64)
-                $HP_SBank2:             (60 40)
-                $HP_SBank3:             (102 64)
-                $HP_SBank4:             (0 0)
-                $HP_SBank5:             (0 0)
-                $HP_SBank6:             (0 0)
-
-    $Ship:                              F/A-76A Longbow
-        $Default:                       (1024 768)
-            $Gauge:                     Hardpoints
-                $HP_Silhouette:         (0 0)
-                    +Image:             hp_sil_longbow
-                $HP_PBank1_L:           (53 16)
-                $HP_PBank1_R:           (65 16)
-                $HP_PBank2_L:           (54 45)
-                $HP_PBank2_R:           (64 45)
-                $HP_PBank3_L:           (0 0)
-                $HP_PBank3_R:           (0 0)
-                $HP_SBank1:             (15 58)
-                $HP_SBank2:             (23 51)
-                $HP_SBank3:             (45 44)
-                $HP_SBank4:             (76 44)
-                $HP_SBank5:             (98 51)
-                $HP_SBank6:             (106 58)
-
-    $Ship:                              F-86C Hellcat V
-        $Default:                       (1024 768)
-            $Gauge:                     Hardpoints
-                $HP_Silhouette:         (0 0)
-                    +Image:             hp_sil_hellcat
-                $HP_PBank1_L:           (53 25)
-                $HP_PBank1_R:           (65 25)
-                $HP_PBank2_L:           (42 25)
-                $HP_PBank2_R:           (76 25)
-                $HP_PBank3_L:           (0 0)
-                $HP_PBank3_R:           (0 0)
-                $HP_SBank1:             (25 50)
-                $HP_SBank2:             (96 50)
-                $HP_SBank3:             (0 0)
-                $HP_SBank4:             (0 0)
-                $HP_SBank5:             (0 0)
-                $HP_SBank6:             (0 0)
-
-    $Ship:                              F-103A Excalibur
-        $Default:                       (1024 768)
-            $Gauge:                     Hardpoints
-                $HP_Silhouette:         (0 0)
-                    +Image:             hp_sil_excalibur
-                $HP_PBank1_L:           (26 54)
-                    +Image:             primary_dbl_left
-                $HP_PBank1_R:           (81 54)
-                    +Image:             primary_dbl_right
-                $HP_PBank2_L:           (53 24)
-                $HP_PBank2_R:           (65 24)
-                $HP_PBank3_L:           (0 0)
-                $HP_PBank3_R:           (0 0)
-                $HP_SBank1:             (47 52)
-                $HP_SBank2:             (57 52)
-                $HP_SBank3:             (64 52)
-                $HP_SBank4:             (74 52)
-                $HP_SBank5:             (0 0)
-                $HP_SBank6:             (0 0)
 #End
