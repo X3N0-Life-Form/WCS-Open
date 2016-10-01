@@ -7397,7 +7397,7 @@ $Formula: ( when
       "Light Destroyer#7" 
       "Light Destroyer#8" 
    )
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_b_01.ogg" ) 
 )
 +Name: Battle groups appear
 +Repeat Count: 1

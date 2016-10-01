@@ -7726,7 +7726,7 @@ $Formula: ( when
       "Nephele Jump Point#JP" 
       "TCS Battleaxe#JP" 
    )
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_b_01.ogg" ) 
    ( force-battle-music ( true ) ) 
    ( ship-turret-target-order 
       "TCS Hermes#1" 

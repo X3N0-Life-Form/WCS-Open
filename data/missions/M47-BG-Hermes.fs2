@@ -6489,7 +6489,7 @@ $Formula: ( when
       "TCS Whanganui" 
       "TCS Gisborne" 
    )
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_e_01.ogg" ) 
    ( force-battle-music ( true ) ) 
 )
 +Name: Proceed to Nav 3

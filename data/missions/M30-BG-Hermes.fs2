@@ -2209,7 +2209,7 @@ $Formula: ( when
       )
       5000 
    )
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_b_01.ogg" ) 
 )
 +Name: Proceed to Nav 1a
 +Repeat Count: 1

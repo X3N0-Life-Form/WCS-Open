@@ -9877,7 +9877,7 @@ $Formula: ( when
       "TCS Tramontane" 
       "TCS Bellona" 
    )
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_e_01.ogg" ) 
 )
 +Name: Proceed to Nav 1
 +Repeat Count: 1
@@ -10447,7 +10447,7 @@ $Formula: ( when
       "Golf 3" 
       "Golf 4" 
    )
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_e_01.ogg" ) 
    ( force-battle-music ( true ) ) 
    ( modify-variable @JammingActive[0] 1 ) 
 )

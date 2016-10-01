@@ -2685,7 +2685,7 @@ $Formula: ( when
       )
       5000 
    )
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_b_01.ogg" ) 
    ( force-battle-music ( true ) ) 
 )
 +Name: Proceed to Nav 1a
@@ -3170,7 +3170,7 @@ $Formula: ( when
 
 $Formula: ( when 
    ( < ( distance-to-nav "Nav 3" ) 5000 ) 
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_b_01.ogg" ) 
    ( lock-secondary-weapon 
       "Bravo 1" 
       "Bravo 2" 
@@ -3456,7 +3456,7 @@ $Formula: ( when
 $Formula: ( when 
    ( < ( distance-to-nav "Nav 4" ) 5000 ) 
    ( show-jumpnode "Eddings Jump Point" ) 
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_b_01.ogg" ) 
    ( lock-secondary-weapon 
       "Bravo 1" 
       "Bravo 2" 

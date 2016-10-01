@@ -9241,7 +9241,7 @@ $Formula: ( when
    ( < ( distance-to-nav "Nav 3" ) 5000 ) 
    ( show-jumpnode "Kilrah Jump Point" ) 
    ( force-battle-music ( true ) ) 
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_e_01.ogg" ) 
 )
 +Name: Proceed to Nav 3
 +Repeat Count: 1

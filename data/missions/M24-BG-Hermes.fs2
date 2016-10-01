@@ -6546,7 +6546,7 @@ $Formula: ( when
 
 $Formula: ( when 
    ( < ( distance-to-nav "Nav 3" ) 5000 ) 
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_b_01.ogg" ) 
    ( lock-secondary-weapon 
       "Alpha 2" 
       "Alpha 1" 
@@ -6978,7 +6978,7 @@ $Formula: ( when
       "Sentry Gun#28" 
    )
    ( show-jumpnode "Orsini Jump Point" ) 
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_b_01.ogg" ) 
 )
 +Name: Proceed to Nav 4
 +Repeat Count: 1

@@ -3051,7 +3051,7 @@ $Formula: ( when
    ( validate-goal 
       "Destroy Kilrathi presence" 
    )
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_b_01.ogg" ) 
 )
 +Name: Ast. base and carrier visible
 +Repeat Count: 1

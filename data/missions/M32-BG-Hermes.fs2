@@ -4981,7 +4981,7 @@ $Formula: ( when
 $Formula: ( when 
    ( < ( distance-to-nav "Nav 6" ) 5000 ) 
    ( show-jumpnode "Alcor Jump Point#1" ) 
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_e_01.ogg" ) 
 )
 +Name: Proceed to Nav 6
 +Repeat Count: 1

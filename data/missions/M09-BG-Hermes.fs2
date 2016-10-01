@@ -6094,7 +6094,7 @@ $Formula: ( when
       )
       5000 
    )
-   ( trigger-arrival-track "Hostile" ) 
+   ( trigger-arrival-track "earrival_normal_b_01.ogg" ) 
    ( force-battle-music ( true ) ) 
 )
 +Name: Proceed to Nav 1b

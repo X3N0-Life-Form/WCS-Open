@@ -4678,7 +4678,7 @@ $Formula: ( when
       "Foxtrot" 
       ( ai-chase "Whiskey" 75 ) 
    )
-   ( trigger-arrival-track "Hostile" ) 
+   ( play-sound-from-file "earrival_normal_e_01.ogg" ) 
 )
 +Name: Asteroid fighters visible
 +Repeat Count: 1
