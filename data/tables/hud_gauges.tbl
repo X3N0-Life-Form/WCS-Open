@@ -688,7 +688,7 @@ $Scale Gauges:						NO
 #Gauge Config
 	$Ships:						( "F-57B Sabre" )
 	$Base: 						(1024, 768)
-	$Required Aspect: 			Full Screen
+	;$Required Aspect: 			Full Screen
 	$Min: 						(1024, 768)
 	$Gauges:
 		;;;;;;;;;;;;;;;;;;;
@@ -928,7 +928,7 @@ $Scale Gauges:						NO
 #Gauge Config
 	$Ships:						( "F-66A Thunderbolt VII" )
 	$Base: 						(1024, 768)
-	$Required Aspect: 			Full Screen
+	;$Required Aspect: 			Full Screen
 	$Min: 						(1024, 768)
 	$Gauges:
 		;;;;;;;;;;;;;;;;;;;
@@ -1047,7 +1047,7 @@ $Scale Gauges:						NO
 		;; From Ship Main Gauge ;;
 		;;;;;;;;;;;;;;;;;;;;;;;;;;
         +Afterburner Energy:
-			Position			(344, 643)
+			Position:			(344, 643)
             Filename:			2_energy2_thunderbolt
 		+Weapon Energy:
 			Position:			(596, 643)
@@ -1164,7 +1164,7 @@ $Scale Gauges:						NO
 #Gauge Config
 	$Ships:						( "F/A-76A Longbow" )
 	$Base: 						(1024, 768)
-	$Required Aspect: 			Full Screen
+	;$Required Aspect: 			Full Screen
 	$Min: 						(1024, 768)
 	$Gauges:
 		;;;;;;;;;;;;;;;;;;;
@@ -1402,7 +1402,7 @@ $Scale Gauges:						NO
 #Gauge Config
 	$Ships:						( "F-86C Hellcat V" )
 	$Base: 						(1024, 768)
-	$Required Aspect: 			Full Screen
+	;$Required Aspect: 			Full Screen
 	$Min: 						(1024, 768)
 	$Gauges:
 		;;;;;;;;;;;;;;;;;;;
@@ -1636,7 +1636,7 @@ $Scale Gauges:						NO
 #Gauge Config
 	$Ships:						( "F-103A Excalibur" )
 	$Base: 						(1024, 768)
-	$Required Aspect: 			Full Screen
+	;$Required Aspect: 			Full Screen
 	$Min: 						(1024, 768)
 	$Gauges:
 		;;;;;;;;;;;;;;;;;;;
